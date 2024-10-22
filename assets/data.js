@@ -6,61 +6,61 @@ const questions = [
             {
                 // Question 1
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 2
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 3
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 4
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 5
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 6
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 7
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 8
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 9
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
             {
                 // Question 10
                 question:
-                options:
+                options: ["", "", ""],
                 answer:
             },
         ]
