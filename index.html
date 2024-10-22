@@ -13,9 +13,12 @@
     </head>
 
     <body>
-        <div class="quiz-container">
-            <h1>Kernow Know-How<span><img src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo" height = "200px"></span></h1>
-            <div id="questions-container" class="hide">
+        <div class="quiz-container center">
+            <header class="flex">
+                <!-- <img id="logo" class="" src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo" height = "200px"> -->
+                <h1 class="center">Kernow Know-How</h1>
+            </header>
+            <div id="questions-container" class="flex hide">
                 <div id="answers-container">
                     <button class="btn">Answer A</button>
                     <button class="btn">Answer B</button>
@@ -26,7 +29,7 @@
                     <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
                 </div>
             </div>
-            <div id="control-buttons">
+            <div id="control-buttons" class="flex">
                 <button id="start" class="btn">Start</button>
                 <button id="next" class="btn hide">Next</button>
             </div>
