@@ -11,7 +11,7 @@
 
 
   <tr>
-    <td>As a user I want to be able to store my highest score to see if I can beat it on my future visits.</td>
+    <td></td>
     <td>Highest score from previous use visible (cookies required)</td>
     <td>N/A</td>
   </tr>
@@ -28,15 +28,16 @@
     <th>Bugs / Issues</th>
   </tr>
   <tr>
-    <td>As a user, I want to have a countdown timer to challenge myself to answer more quickly.</td>
-    <td>A countdown timer to display either how long I have left to answer the question before it assigns to wrong</td>
+    <td>As a Cornish user, I would like to take the Cornwall quiz in Cornish.</td>
+    <td>A translation toggle where the user can switch between Cornish text and English.</td>
     <td>N/A</td>
   </tr>
     
- 
-  <td>As a site-owner I want to have a questions backup in case the API  stops working.</td>
-    <td>A secondary API or source of questions in case the first API breaks down</td>
+ <tr>
+    <td>As a user, I would like to be able to share my score with others.</td>
+    <td>Social media links on th</td>
     <td>N/A</td>
+  </tr>
   </table>
 
 ## Fixed Bugs / Issues
