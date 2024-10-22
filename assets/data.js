@@ -69,7 +69,12 @@ const questions = [
         // Topic
         topic: "Pop-music trivia",
         questions: [
-            {}
+            {
+                // Question
+                question: ,
+                options: ["", "", ""],
+                answer: ,
+            }
         ]
     }
 ]
