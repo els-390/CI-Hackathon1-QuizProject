@@ -3,14 +3,28 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    font-family: Lato, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+.btn {
+    margin: 20px auto;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+
 }
 
 /* skins*/
 /* 
-.hide {
-    display: none;
-} */
+/* btn */
+/* .hide {   /* display: none; */ */ */
 
 /*structure*/
 .center {
@@ -42,7 +56,9 @@
  } */
 
  #quiz-container {
-    
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 5px;
  }
 
 /*content*/
