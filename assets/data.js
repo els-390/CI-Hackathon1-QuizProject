@@ -195,6 +195,36 @@ const questions = [
                 options: ["Georges Braque", "Fernand Leger", "Pable Picasso"],
                 answer: 2,
             },
+            {
+                // Question 11
+                question: 'Which artist created the famous sculpture "The Thinker"?',
+                options: ["Michelangelo", "Donatello", "Auguste Rodin"],
+                answer: 2,
+            },
+            {
+                // Question 12
+                question: "Who was a leading figre in the Fauvist movement?",
+                options: ["Henri Matisse", "Andre Derain", "Maurice de Vlaminck"],
+                answer: 0,
+            },
+            {
+                // Question 13
+                question: 'Which artist painted the famous painting "The Weeping Woman"?',
+                options: ["Pablo Picasso", "Salvador Dali", "Gorges Braque"],
+                answer: 0,
+            },
+            {
+                // Question 14
+                question: "Who was a prominent figure in the Expressionist movement?",
+                options: ["Egon Schiele", "Edvard Munch", "Oskar Kokoschka"],
+                answer: 1,
+            },
+            {
+                // Question 15
+                question: 'Which artist created the famous painting "The Persistence of Memory"?',
+                options: ["Salvador Dali", "Rene Magritte", "Max Ernst"],
+                answer: 0,
+            }
         ]
     }
 ]
