@@ -269,57 +269,57 @@ const questions = [
             },
             {
                 // Question 7
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "Wuthering Heights"?',
+                options: ["Anne Brontë", "Charlotte Brontë", "Emily Brontë"],
+                answer: 2,
             },
             {
                 // Question 8
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which author wrote the horror novel "Dracula"?',
+                options: ["Bram Stoker", "Mary Shelley", "Edgar Allan Poe"],
+                answer: 0,
             },
             {
                 // Question 9
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "The Great Gatsby"?',
+                options: ["Ernest Hemingway", "F. Scott Fitzgerald", "William Faulkner"],
+                answer: 1,
             },
             {
                 // Question 10
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which author wrote the fantasy novel "Alice\'s Adventures in Wonderland"?',
+                options: ["Lewis Carroll", "C.S. Lewis", "J.R.R. Tolkien"],
+                answer: 0,
             },
             {
                 // Question 11
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "The Count of Monte Cristo"?',
+                options: ["Gustave Flaubert", "Victor Hugo", "Alexandre Dumas"],
+                answer: 2,
             },
             {
                 // Question 12
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which author wrote the science fiction novel "Fahrenheit 451"?',
+                options: ["Ray Bradbury", "Isaac Asimov", "Arthur C. Clarke"],
+                answer: 0,
             },
             {
                 // Question 13
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "The Scarlet Letter"?',
+                options: ["Herman Melville", "Nathaniel Hawthorne", "Edgar Allan Poe"],
+                answer: 1,
             },
             {
                 // Question 14
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which author wrote the horror novel "Frankenstein"?',
+                options: ["Edgar Allan Poe", "Bram Stoker", "Mary Shelley"],
+                answer: 2,
             },
             {
                 // Question 15
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "The Adventures of Huckleberry Finn"?',
+                options: ["Mark Twain", "Ernest Hemingway", "William Faulkner"],
+                answer: 0,
             },
         ]
     }
