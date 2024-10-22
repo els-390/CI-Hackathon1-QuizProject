@@ -1,4 +1,4 @@
-/*css reset*/
+/* ----------CSS RESET---------- */
 
 * {
     box-sizing: border-box;
@@ -37,13 +37,27 @@ h1 {
     background-color: pink;
 }
 
+/* ------------CONTAINER------------ */
+/* body {
+    display: flex;
+    justify-content: center;
+} */
 
-/* skins*/
-/* 
-/* btn */
-/* .hide {   /* display: none; */
+#quiz-container {
+    /* background-position: center; */
+    /* background-size: auto; */
+    background-color: rgba(121, 116, 116, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+#questions-container {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
 
-/*structure*/
+
+/* ------------STRUCTURE------------ */
 .center {
     margin: auto;
     /* text-align: justify; */
@@ -66,23 +80,12 @@ h1 {
     width: 100%;
 }
 
-/*container*/
- /* body {
-    display: flex;
-    justify-content: center;
- } */
 
- #quiz-container {
-    /* background-position: center; */
-    /* background-size: auto; */
-    background-color: rgba(121, 116, 116, 0.7);
-    padding: 20px;
-    border-radius: 5px;
- }
- #questions-container {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
- }
 
-/* content */
+/* ------------CONTENT------------ */
+
+
+/* ------------SKINS------------ */
+/* 
+/* btn */
+/* .hide {   /* display: none; */
