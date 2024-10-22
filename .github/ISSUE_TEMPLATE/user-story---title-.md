@@ -1,5 +1,5 @@
 ---
-name: 'USER STORY: <Title>'
+name: 'User Story: <Title>'
 about: Choose quiz topic feature
 title: 'USER STORY: <Title>'
 labels: ''
