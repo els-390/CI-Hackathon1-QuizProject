@@ -165,6 +165,36 @@ const questions = [
                 options: ["Edvard Munch", "Vincent Van Gogh", "Pablo Picasso"],
                 answer: 0, 
             },
+            {
+                // Question 6
+                question: "Who was a prominent figure in the Surrealist movement?",
+                options: ["Salvador Dali", "Rene Magritte", "Max Ernst"],
+                answer: 0,
+            },
+            {
+                // Question 7
+                question: 'Which artist created the famous painting "The Night Cafe"?',
+                options: ["Paul Cezanne", "Edgar Degas", "Vincent Van Gogh"],
+                answer: 2,
+            },
+            {
+                // Question 8
+                question: "Who was a leading figure in the Abstract Expressionist movement?",
+                options: ["Jackson Pollock", "Willem de Kooning", "Mark Rothko"],
+                answer: 0,
+            },
+            {
+                // Question 9
+                question: 'Which artist painted the famous painting "Girl with a Pearl Earring"?',
+                options: ["Rembrandt van Rijn", "Johannes Vermeer", "Frans Hals"],
+                answer: 1,
+            },
+            {
+                // Question 10
+                question: "Who was a prominenet figure in the Cubist movement?",
+                options: ["Georges Braque", "Fernand Leger", "Pable Picasso"],
+                answer: 2,
+            },
         ]
     }
 ]
