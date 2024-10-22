@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kernow Know-How</title>
 </head>
 
 <body>
-    <h1>Hello everyone from kateBranch</h1>
-    <h1>Ellie test</h1>
+    <div class="quiz-container">
+        <h1>Kernow Know-How</h1>
+        <div id="questions-container" class="hide">
+            <div id="answers-container">
+                <button class="btn">Answer A</button>
+                <button class="btn">Answer B</button>
+                <button class="btn">Answer C</button>
+            </div>
+            <div class="score-area">
+                <p class="scores">Correct Answers <span id="score">0</span></p>
+                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+            </div>
+        </div>
+        <div id="control-buttons">
+            <button id="start" class="btn">Start</button>
+            <button id="next" class="btn hide">Next</button>
+        </div>
+    </div>
 </body>
 
 </html>
