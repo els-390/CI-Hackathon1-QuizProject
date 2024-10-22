@@ -329,153 +329,153 @@ const questions = [
         questions: [
             {
                 // Question 1
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'What is the main protagonist in the popular game "The Last of Us"?',
+                options: ["Joel", "Ellie", "Tess"],
+                answer: 0,
             },
             {
                 // Question 2
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "Which iconic video game character was created by Shigeru Miyamoto?",
+                options: ["Sonic", "Link", "Mario"],
+                answer: 2,
             },
             {
                 // Question 3
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "What is the name of the popular multiplayer game where players build and battle in a blocky world?",
+                options: ["Roblox", "Minecraft", "Terraria"],
+                answer: 1,
             },
             {
                 // Question 4
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'In what year was the first "Assassin\'s Creed" game released?',
+                options: ["2007", "2005", "2009"],
+                answer: 0,
             },
             {
                 // Question 5
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'What is the name of the main character in the popular "Portal" series?',
+                options: ["Wheatley", "GLaDOS", "Chell"],
+                answer: 2,
             },
             {
                 // Question 6
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which video game company developed the "Resident Evil" series?',
+                options: ["Capcom", "Square Enix", "Rockstar Games"],
+                answer: 0,
             },
             {
                 // Question 7
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "What is the name of the popular fighting game series created by Masashi Tokuoka and Takashi Nishiyama?",
+                options: ["Mortal Kombat", "Street Fighter", "Tekken"],
+                answer: 1,
             },
             {
                 // Question 8
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'In what year was the first "Grand Theft Auto" game released?',
+                options: ["1997", "1999", "2001"],
+                answer: 0,
             },
             {
                 // Question 9
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "What is the name of the popular role-playing game series developed by Bethesda Game Studios?",
+                options: ["Fallout", "The Elder Scrolls", "Skyrim"],
+                answer: 1,
             },
             {
                 // Question 10
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which video game character was created by Hideo Kojima and first appeared in "Metal Gear"?',
+                options: ["Liquid Snake", "Big Boss", "Solid Snake"],
+                answer: 2,
             },
             {
                 // Question 11
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "What is the name of the popular action-adventure game series developed by Nintendo?",
+                options: ["Donkey Kong Country", "Super Mario Bros.", "The Legend of Zelda"],
+                answer: 2,
             },
             {
                 // Question 12
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'In what year was the first "Call of Duty" game released?',
+                options: ["2003", "2005", "2007"],
+                answer: 0,
             },
             {
                 // Question 13
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "What is the name of the popular role-playing game series developed by BioWare?",
+                options: ["Dragon Age", "Mass Effect", "BioShock"],
+                answer: 0,
             },
             {
                 // Question 14
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which video game company developed the "God of War" series?',
+                options: ["Rockstar Games", "Sony Santa Monica Studio", "Activision"],
+                answer: 1,
             },
             {
                 // Question 15
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "What is the name of the popular first-person shooter game series created by id Software?",
+                options: ["Doom", "Quake", "Wolfenstein 3D"],
+                answer: 0,
             },
             {
                 // Question 16
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'In what year was the first "Final Fantasy" game released?',
+                options: ["1987", "1990", "1992"],
+                answer: 0,
             },
             {
                 // Question 17
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which video game company developed the "Diablo" series?',
+                options: ["Blizzard Entertainment", "Activision", "Electronic Arts (EA)"],
+                answer: 0,
             },
             {
                 // Question 18
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "What is the name of the popular survival horror game series created by Capcom?",
+                options: ["Dead Space", "Silent Hill", "Resident Evil"],
+                answer: 2,
             },
             {
                 // Question 19
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'In what year was the first "World of Warcraft" game released?',
+                options: ["2002", "2003", "2006"],
+                answer: 1,
             },
             {
                 // Question 20
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which video game company developed the "Overwatch" series?',
+                options: ["Blizzard Entertainment", "Activision", "Electronic Arts (EA)"],
+                answer: 0,
             },
             {
                 // Question 21
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'In what year was the first "Halo" game released?',
+                options: ["2005", "2003", "2001"],
+                answer: 2,
             },
             {
                 // Question 22
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which video game company developed the "Uncharted" series?',
+                options: ["Rockstar Games", "Naughty Dog", "Insomniac Games"],
+                answer: 1,
             },
             {
                 // Question 23
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'In what year was the first "Pokémon" game released?',
+                options: ["2000", "1998", "1996"],
+                answer: 2,
             },
             {
                 // Question 24
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "Which iconic video game console was released in 1994 and is known for its portability?",
+                options: ["Nintendo GameCube", "Sony PlayStation Portable", "Nintendo Game Boy"],
+                answer: 2,
             },
             {
                 // Question 25
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which video game company developed the "Portal" series?',
+                options: ["Valve Corporation", "Bethesda Game Studios", "Rockstar Games"],
+                answer: 0,
             }
         ]
     }
