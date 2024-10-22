@@ -71,64 +71,64 @@ const questions = [
         questions: [
             {
                 // Question 1
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which British singer-songwriter released the album "21" in 2011?',
+                options: ["Taylor Swift", "Katy Perry", "Adele"],
+                answer: 2,
             },
             {
                 // Question 2
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "Who was the lead vocalist of the rock band Queen?",
+                options: ["Brian May", "Freddie Mercury", "Roger Taylor"],
+                answer: 1,
             },
             {
                 // Question 3
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which British singer-songwriter released the album "19" in 2007?',
+                options: ["Amy Winehouse", "Lily Allen", "Leona Lewis"],
+                answer: 1,
             },
             {
                 // Question 4
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "Who is the lead vocalist of the rock band Guns N' Roses?",
+                options: ["Slash", "Duff McKagan", "Axl Rose"],
+                answer: 2,
             },
             {
                 // Question 5
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which American singer-songwriter released the album "True Blue" in 1986?',
+                options: ["Madonna", "Mariah Carey", "Whitney Houston"],
+                answer: 0,
             },
             {
                 // Question 6
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "Who is the lead vocalist of the rock band Imagine Dragons?",
+                options: ["Dan Reynolds", "Ben Mckee", "Wayne Sermon"],
+                answer: 0,
             },
             {
                 // Question 7
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which British singer-songwriter released the album "Back to Black" in 2006?',
+                options: ["Amy Winehouse", "Lily Allen", "Paloma Faith"],
+                answer: 0,
             },
             {
                 // Question 8
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: "Who is the load vocalist of the rock ban Coldplay?",
+                options: ["Jonny Buckland", "Will Champion", "Chris Martin"],
+                answer: 2,
             },
             {
                 // Question 9
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which American singer-songwriter released the album "1989" in 2014?',
+                options: ["Taylor Swift", "Katy Perry", "Lady Gaga"],
+                answer: 0,
             },
             {
                 // Question 10
-                question: ,
-                options: ["", "", ""],
-                answer: ,
-            },
+                question: "Who is the lead vocalist of the rock band The Killers?",
+                options: ["Brandon Flowers", "Dave Keuning", "Ronnie Vannucci Jr."],
+                answer: 0,
+            }
         ]
     }
 ]
