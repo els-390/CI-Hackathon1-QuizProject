@@ -14,35 +14,28 @@
     </head>
 
     <body>
-        <img id="logo" class="" src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo" height = "200px">
-
-        <div id="quiz-container" class="center">
-            
-            <h1>Kernow Know-How</h1>
-
-            <div id="score-container" class="flex spread">
+        <div id="quiz-container" class="flex column center">
+            <header class="flex">
+                <!-- <img id="logo" class="" src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo" height = "200px"> -->
+                <h1 class="center">Kernow Know-How</h1>
+            </header>
+            <div class="score-area flex">
                 <p class="scores">Correct Answers <span id="score">0</span></p>
                 <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
             </div>
-
-            <div id="questions-container" class="">
-                <p class="">This is a question</p>
-
-                <div id="answers-container" class="">
+            <div id="questions-container" class="hide">
+                <p class="flex">This is a question</p>
+                <div id="answers-container" class="flex">
                     <button class="btn">Answer A</button>
                     <button class="btn">Answer B</button>
                     <button class="btn">Answer C</button>
                 </div>
-
             </div>
-
-            <div id="control-buttons" class="">
-                <button id="start" class="btn hide">Start</button>
+            <div id="control-buttons" class="flex">
+                <button id="start" class="btn">Start</button>
                 <button id="next" class="btn hide">Next</button>
             </div>
-
         </div>
-
         <script src="assets/data.js"></script>
         <script src="assets/script.js"></script>
     </body>
