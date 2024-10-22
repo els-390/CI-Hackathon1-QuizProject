@@ -27,10 +27,22 @@
     align-items: center;
 }
 
+.column {
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+}
+
 /*container*/
  /* body {
     display: flex;
     justify-content: center;
  } */
+
+ #quiz-container {
+    
+ }
 
 /*content*/

@@ -13,20 +13,21 @@
     </head>
 
     <body>
-        <div class="quiz-container center">
+        <div id="quiz-container" class="flex column center">
             <header class="flex">
                 <!-- <img id="logo" class="" src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo" height = "200px"> -->
                 <h1 class="center">Kernow Know-How</h1>
             </header>
-            <div id="questions-container" class="flex hide">
-                <div id="answers-container">
+            <div class="score-area flex">
+                <p class="scores">Correct Answers <span id="score">0</span></p>
+                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+            </div>
+            <div id="questions-container" class="hide">
+                <p class="flex">This is a question</p>
+                <div id="answers-container" class="flex">
                     <button class="btn">Answer A</button>
                     <button class="btn">Answer B</button>
                     <button class="btn">Answer C</button>
-                </div>
-                <div class="score-area">
-                    <p class="scores">Correct Answers <span id="score">0</span></p>
-                    <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
                 </div>
             </div>
             <div id="control-buttons" class="flex">
