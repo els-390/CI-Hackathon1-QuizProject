@@ -1,3 +1,5 @@
+![alt text](assets/logos/KernowKnowHowLogoColor.webp)
+
 <h1>Kernow Know-How README.MD</h1>
 
 <h2>Introduction</h2>
