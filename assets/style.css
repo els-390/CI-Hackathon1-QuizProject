@@ -1,34 +1,9 @@
-/*css reset*/
+/* ----------CSS RESET---------- */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-/* skins*/
-/* 
-.hide {
-    display: none;
-} */
-
-/*structure*/
-.center {
-    margin: auto;
-    /* text-align: justify; */
-    /* justify-content: center;
-    align-items: center; */
-    
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.column {
-    flex-direction: column;
 }
 
 
@@ -45,4 +20,33 @@
     width: fit-content;
  }
 
+ /*structure*/
+ .center {
+     margin: auto;
+     /* text-align: justify; */
+     /* justify-content: center;
+     align-items: center; */
+     
+ }
+ 
+ .flex {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .column {
+     flex-direction: column;
+ }
+
+ 
+ 
 /*content*/
+ 
+ 
+ 
+ /* skins*/ 
+ /* 
+ .hide {
+     display: none;
+ } */    
