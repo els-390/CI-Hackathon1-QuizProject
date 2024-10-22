@@ -135,7 +135,36 @@ const questions = [
         // Topic
         topic: "Art",
         questions: [
-            {}
+            {
+                // Question 1
+                question: 'Which artist painted the famous painting "The Starry Night"?',
+                options: ["Leonardo da Vinci", "Vincent van Gogh", "Claude Monet"],
+                answer: 1,
+            },
+            {
+                // Question 2
+                question: "Who was a prominent figure in the Impressionist movement?",
+                options: ["Pierre-Auguste Renoir", "Paul Cezanne", "Mary Cassatt"],
+                answer: 0,
+            },
+            {
+                // Question 3
+                question: 'Which artist created the famous sculpture "David"?',
+                options: ["Raphael", "Bernini", "Michelangelo"],
+                answer: 2,
+            },
+            {
+                // Question 4
+                question: "Who was a leading figure in the Pop Art movement?",
+                options: ["Roy Lichtenstein", "Andy Warhol", "Jasper Johns"],
+                answer: 1,
+            },
+            {
+                // Question 5
+                question: 'Which artist painted the famous painting "The Scream"?',
+                options: ["Edvard Munch", "Vincent Van Gogh", "Pablo Picasso"],
+                answer: 0, 
+            },
         ]
     }
 ]
