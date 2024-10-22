@@ -34,16 +34,20 @@ We selected the font style Poppins 'https://fonts.googleapis.com/css2?family=Pop
 
 ## Wire Frames
 
+We have included the wireframes for each stage of the user journey including the inital page, the quiz page and the final page. 
 
-<strong>Landing page for First Time User followed by Options Pages for repeat users<br></strong>
+<strong>Wireframe for web browser. <br></strong>
 
 
+<img src="assets/images/wireframes/Web browser.png" alt="Wireframe images for web browser">
+
+<strong>Wireframe for tablet. <br></strong>
 
 
-<img src="assets/images/readMeImages/wireframes/wflandingpagefinal2.png" alt="Wireframe image of Insert name and Options page">
+<img src="assets/images/wireframes/Tablet.png" alt="Wireframe images for Tablet">
 
-## Quiz page
+<strong>Wireframe for mobile. <br></strong>
 
-We ensured that we provided wireframes to cover all the different stages of user experience and features
 
-<img src="assets/images/readMeImages/wireframes/wfquizfinal2.png" alt="Wireframe image of In-Quiz page">
+<img src="assets/images/wireframes/Mobile.png" alt="Wireframe images for mobile">
+
