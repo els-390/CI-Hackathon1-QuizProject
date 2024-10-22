@@ -2,7 +2,11 @@
 
 <h2>Introduction</h2>
 
-Kernow Know-How by TEAM NAME is an online quiz designed to allow users to test their knowledge of Cornwall. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
+Kernow Know-How by **TEAM NAME** is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
+
+Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children for example when doing a school project.
+
+~~It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.~~
 
 ## Landing page for first time users
 
