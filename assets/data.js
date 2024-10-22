@@ -233,39 +233,39 @@ const questions = [
         questions: [
             {
                 // Question 1
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "Pride and Prejudice"?',
+                options: ["Charles Dickens", "Jane Austen", "Emily Brontë"],
+                answer: 1,
             },
             {
                 // Question 2
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which author wrote the dystopian novel "1984"?',
+                options: ["George Orwell", "Aldous Huxley", "Ray Bradbury"],
+                answer: 0,
             },
             {
                 // Question 3
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "To Kill a Mockingbird"?',
+                options: ["F. Scott Fitzgerald", "Jane Austen", "Harper Lee"],
+                answer: 2,
             },
             {
                 // Question 4
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which author wrote the fantasy novel "The Lord of the Rings"?',
+                options: ["J.R.R. Tolkien", "C.S. Lewis", "George R.R. Martin"],
+                answer: 0,
             },
             {
                 // Question 5
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Who wrote the classic novel "Jane Eyre"?',
+                options: ["Emily Brontë", "Charlotte Brontë", "Anne Brontë"],
+                answer: 1,
             },
             {
                 // Question 6
-                question: ,
-                options: ["", "", ""],
-                answer: ,
+                question: 'Which author wrote the science fiction novel "Do Androids Dream of Electric Sheep?"',
+                options: ["Isaac Asimov", "Philip K. Dick", "Arthur C. Clarke"],
+                answer: 1,
             },
             {
                 // Question 7
