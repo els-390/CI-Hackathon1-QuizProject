@@ -327,7 +327,12 @@ const questions = [
         // Topic
         topic: "Video games",
         questions: [
-            {}
+            {
+                // Question
+                question: ,
+                options: ["", "", ""],
+                answer: ,
+            }
         ]
     }
 ]
