@@ -7,20 +7,20 @@
 }
 
 
-/*container*/
+/* ------------CONTAINER------------ */
 
  #quiz-container {
     border: 4px solid black;
     width: 70%;
  }
 
- /*structure*/
+/* ------------STRUCTURE------------ */
  .center {
      margin: auto;
      text-align: center;
  }
  
- /* flex and relevant flex settings */
+/* flex and relevant flex settings */
  .flex {
      display: flex;
  }
@@ -35,11 +35,11 @@
 
  
  
-/*content*/
+/* ------------CONTENT------------ */
  
  
  
- /* skins*/ 
+/* ------------SKINS------------ */
  .hide {
      display: none;
  }
