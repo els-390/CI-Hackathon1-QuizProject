@@ -42,7 +42,8 @@
  } */
 
  #quiz-container {
-    
+    border: 2px solid black;
+    position: absolute;
  }
 
 /*content*/
