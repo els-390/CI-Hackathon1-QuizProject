@@ -7,7 +7,7 @@ const questions = [
                 // Question 1
                 question: "What is the name of the capital city of Cornwall?",
                 options: ["Penzance", "Truro", "St Ives"],
-                answer: 2,      // refers to the index of the correct option
+                answer: 1,      // refers to the index of the correct option
             },
             {
                 // Question 2
@@ -61,7 +61,7 @@ const questions = [
                 // Question 10
                 question: "What is the name of the River that flows through Truro, Cornwall?",
                 options: ["Fowey River", "Tamar River", "Kenwyn River"],
-                answer: 0
+                answer: 2
             }
         ]
     },
