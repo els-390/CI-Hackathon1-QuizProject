@@ -1,8 +1,8 @@
-<h1>Quiz-E by Quizzee Rascals README.MD</h1>
+<h1>Kernow Know-How README.MD</h1>
 
 <h2>Introduction</h2>
 
-Quiz-E by Quizzee Rascals is an online quiz designed to allow users to test their general and subject-specific knowledge. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
+Kernow Know-How by TEAM NAME is an online quiz designed to allow users to test their knowledge of Cornwall. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
 
 ## Landing page for first time users
 
