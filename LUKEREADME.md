@@ -35,7 +35,13 @@
     
  <tr>
     <td>As a user, I would like to be able to share my score with others.</td>
-    <td>Social media links on th</td>
+    <td>Social media links are displayed upon the completion of the quiz.</td>
+    <td>N/A</td>
+  </tr>
+
+  <tr>
+    <td>As a user, I would like the game to display my name when I'm playing.</td>
+    <td>Input name box would take the users name at the start, then have a customised user greeting message.</td>
     <td>N/A</td>
   </tr>
   </table>
