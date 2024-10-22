@@ -7,15 +7,42 @@
 }
 
 /* skins*/
-
+/* 
 .hide {
     display: none;
-}
+} */
 
 /*structure*/
+.center {
+    margin: auto;
+    /* text-align: justify; */
+    /* justify-content: center;
+    align-items: center; */
+    
+}
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+}
 
 /*container*/
+ /* body {
+    display: flex;
+    justify-content: center;
+ } */
 
+ #quiz-container {
+    
+ }
 
 /*content*/
