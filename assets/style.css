@@ -10,10 +10,7 @@
 /* ------------CONTAINER------------ */
 .center {
     margin: auto;
-    /* text-align: justify; */
-    /* justify-content: center;
-    align-items: center; */
-    
+    text-align: center;    
 }
 
 .flex {
@@ -22,21 +19,17 @@
     align-items: center;
 }
 
-.column {
-    flex-direction: column;
+.spread {
+    justify-content: space-around;
 }
-
 
 /* ------------STRUCTURES------------ */
 #quiz-container {
-    /* background-position: center; */
-    /* background-size: auto; */
     background-color: rgba(121, 116, 116, 0.7);
     padding: 20px;
     border-radius: 5px;
 }
 #questions-container {
-    text-align: center;
     font-size: 24px;
     font-weight: bold;
 }
@@ -77,6 +70,7 @@ h1 {
 
 
 /* ------------SKINS------------ */
-/* 
-/* btn */
-/* .hide {   /* display: none; */
+
+.hide {
+    display: none;
+}

@@ -11,20 +11,20 @@
 
 <body>
 
-    <div id="quiz-container" class="flex column center">
+    <div id="quiz-container" class="center">
 
-        <header class="flex">
+        <header>
             <!-- <img id="logo" class="" src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo" height = "200px"> -->
-            <h1 class="center">Kernow Know-How</h1>
+            <h1 class="">Kernow Know-How</h1>
         </header>
 
-        <div class="score-area flex">
+        <div id="score-container" class="flex spread">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
         </div>
 
-        <div id="questions-container" class="hide">
-            <p class="flex">This is a question</p>
+        <div id="questions-container" class="">
+            <p class="">This is a question</p>
 
             <div id="answers-container" class="flex">
                 <button class="btn">Answer A</button>
@@ -36,12 +36,12 @@
 
         <div id="control-buttons" class="flex">
             <button id="start" class="btn">Start</button>
-            <button id="next" class="btn hide">Next</button>
+            <button id="next" class="btn">Next</button>
         </div>
 
     </div>
 
-    <script src="assets/data.js"></script>
+    <script src="assets/data.js"></script>          <!-- Data.js MUST be loaded first, as it does not need to wait for DOM. -->
     <script src="assets/script.js"></script>
 
 </body>
