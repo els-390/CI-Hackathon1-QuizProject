@@ -136,8 +136,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function resetVars() {
         userScore = 0;
         currentQuestionIndex = 0;
+        // Insert way to change topic selected??
         questionSet = shuffledQuestions(topic);
-
+        removeLastQuestion();
     }
 
     function shuffledQuestions (topicName) {
