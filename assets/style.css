@@ -13,10 +13,12 @@
     text-align: center;    
 }
 
+/* flex and relevant flex settings */
+
 .flex {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;        /* <--potential redundant */
 }
 
 .spread {
