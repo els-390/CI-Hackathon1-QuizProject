@@ -73,10 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Toggle the 'selected' class on the clicked button
         selectedButton.classList.toggle('selected');
-        
-        console.log("log answer buttons:", answerButtons);
 
-        
+        //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
             questionsContainer.style.backgroundColor = "green";
             // swal({
@@ -110,29 +108,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Luke
     //marker 5
-    onNextButton(); //<--should maybe be submit button and next button?
-    function onNextButton() {
-            const answer = shuffledQuestions[currentQuestionIndex].answer;
-            console.log(shuffledQuestions);
-            console.log(answer);
-            
-            if (document.querySelector(".selected").id == answer) {
-                console.log("correct")
-                console.log("score++")
-            } else {
-                console.log("incorrect")
-            }
-            
-            currentQuestionIndex++;
-            if (currentQuestionIndex + 1 != shuffledQuestions.length) {
-                // removeLastQuestion();
-                console.log("create remove last question function");
-            } else if (currentQuestionIndex + 1 == shuffledQuestions.length) {
-                // finishedQuizScene();
-                console.log("create finished quiz scene function");
-            } else {
-                console.log("Luke messed this if up");
-            }
+    function onNextButton() {            
+        currentQuestionIndex++;
+        if (currentQuestionIndex < shuffledQuestions.length) {
+            removeLastQuestion();
+        } else if (currentQuestionIndex == shuffledQuestions.length) {
+            // finishedQuizScene();
+            console.log("create finished quiz scene function");
+        } else {
+            console.log("Luke messed this if up");
+        }
         }
     
 	// check which answer button has selected/choice
