@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // const topic = questionsArray[0].questions;
     let topic = "Cornwall";
     //change shuffledQuestions to a function later
-    let shuffledQuestions = shuffleQuestions(topic);
+    let questionSet = shuffledQuestions(topic);
     // let shuffledQuestions = topic;
     let currentQuestionIndex = 0;
     let answerButtons = document.getElementById("answers-container");
@@ -44,12 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
     //marker 3\
     
     function setNextQuestion() {
-        showNextQuestion(shuffledQuestions[currentQuestionIndex]);
+        showNextQuestion(questionSet[currentQuestionIndex]);
     }
     
     function showNextQuestion(shuffledObject) {
         const nextQuestion = document.getElementById("question");
-        const answer = shuffledQuestions[currentQuestionIndex].answer;
+        const answer = questionSet[currentQuestionIndex].answer;
         nextQuestion.innerText = shuffledObject.question;
 
         for (let option in shuffledObject.options) {
@@ -110,10 +110,14 @@ document.addEventListener("DOMContentLoaded", () => {
     //marker 5
     function onNextButton() {
         nextButton.classList.toggle("hide");
+
+        questionsContainer.style.backgroundColor = "";
+        
         currentQuestionIndex++;
-        if (currentQuestionIndex < shuffledQuestions.length) {
+
+        if (currentQuestionIndex < questionSet.length) {
             removeLastQuestion();
-        } else if (currentQuestionIndex === shuffledQuestions.length) {
+        } else if (currentQuestionIndex === questionSet.length) {
             // finishedQuizScene();
             console.log("create finished quiz scene function");
             finishedQuizScene();
@@ -132,19 +136,16 @@ document.addEventListener("DOMContentLoaded", () => {
     function resetVars() {
         userScore = 0;
         currentQuestionIndex = 0;
-        shuffledQuestions = shuffle(topic);
+        questionSet = shuffledQuestions(topic);
+
     }
 
-    function shuffleQuestions (topicName) {
+    function shuffledQuestions (topicName) {
         for (let questionSet of questionsArray) {
-            // console.log
-            console.log(questionSet.topic, topicName);
-            console.log(questionSet.topic == topicName);
             
             if (questionSet.topic == topicName){
-                console.log(topic, topicName);
-                console.log(topic == topicName);
                 return questionSet.questions.sort(() => Math.random() - 0.5);
             }
         }
+    }
 });
