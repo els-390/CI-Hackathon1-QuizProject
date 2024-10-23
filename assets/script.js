@@ -91,10 +91,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 icon: "warning",
                 button: "Next",
             });
-
-            for (let button of answerButtons.children) {
-                button.disabled = true;
-            }
+        }
+        
+        for (let button of answerButtons.children) {
+            button.disabled = true;
         }
 
         // Remove the 'selected' class from all other buttons
