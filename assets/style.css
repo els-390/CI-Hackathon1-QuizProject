@@ -1,4 +1,4 @@
-/*css reset*/
+/* ----------CSS RESET---------- */
 
 * {
     box-sizing: border-box;
@@ -6,18 +6,36 @@
     padding: 20px;
     font-family: Lato, sans-serif;
 }
-h1 {
-    text-align: center;
+
+/* ------------CONTAINER------------ */
+.center {
+    margin: auto;
+    text-align: center;    
+}
+
+/* flex and relevant flex settings */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;        /* <--potential redundant */
+}
+
+.spread-itms {
+    justify-content: space-around;
+}
+
+/* ------------STRUCTURES------------ */
+#quiz-container {
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .btn {
     margin: 20px auto;
-    background-color: black;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    display: block;
     /* cursor:pointer; */
 }
 .btn:hover {
@@ -28,8 +46,6 @@ h1 {
     /* display: ; */
     margin: 20px auto;
     padding: 10px 20px;
-    color: black;
-    background-color: white;
     border: none;
     border-radius: 5px;
 }
@@ -37,52 +53,32 @@ h1 {
     background-color: pink;
 }
 
+/* ------------CONTENT------------ */
 
-/* skins*/
-/* 
-/* btn */
-/* .hide {   /* display: none; */ */ */
-
-/*structure*/
-.center {
-    margin: auto;
-    /* text-align: justify; */
-    /* justify-content: center;
-    align-items: center; */
-    
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.row {
-    width: 100%;
-}
-
-/*container*/
- /* body {
-    display: flex;
-    justify-content: center;
- } */
-
- #quiz-container {
-    /* background-position: center; */
-    /* background-size: auto; */
-    background-color: rgba(121, 116, 116, 0.7);
-    padding: 20px;
-    border-radius: 5px;
- }
- #questions-container {
+/* by element tags */
+/* h1 {
     text-align: center;
+} */
+
+/* by Id Name */
+#question {
     font-size: 24px;
     font-weight: bold;
- }
+}
 
-/* content */
+/* by class */
+
+/* ------------SKINS------------ */
+
+.white-black {
+    color: white;
+    background-color: black;
+}
+
+.background-skin {
+    background-color: rgba(121, 116, 116, 0.7);
+}
+
+.hide {
+    display: none;
+}
