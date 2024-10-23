@@ -1,4 +1,6 @@
 //marker 1
+add event listener to start button for StartFunction
+
 StartFunction
 	when startButton is clicked, hide start button (or grey out?)
 	unhide questions-container

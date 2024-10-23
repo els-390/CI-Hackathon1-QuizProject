@@ -1,4 +1,4 @@
-const questions = [
+const questionsArray = [
     {
         // Topic
         topic: "Cornwall",
@@ -479,4 +479,4 @@ const questions = [
             }
         ]
     }
-]
+];
