@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 title: "Good job!",
                 text: "You got the right answer!",
                 icon: "success",
-                button: "Next",
+                button: document.getElementById("next"),
             });
         } else {
             questionsContainer.style.backgroundColor = "red";
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 title: "Good try! but...",
                 text: "You got the wrong answer!",
                 icon: "warning",
-                button: "Next",
+                button: document.getElementById("next"),
             });
         }
         
