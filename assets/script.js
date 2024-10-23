@@ -28,13 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //marker 2
     function removeLastQuestion () {
         document.getElementById("question").innerText = "";
-        
-        while (answerButtons.firstChild) {
-            answerButtons.removeChild(answerButtons.firstChild);
-        }
-        
-        // answerButtons.contains = "";
-        console.log(answerButtons);
+        answerButtons.innerHTML = "";
         setNextQuestion();
     }
     
@@ -72,17 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 newButton.addEventListener("click", onAnswerSelected);
                 answerButtons.appendChild(newButton);
         }
-
-        shuffledObject.options.forEach(answer => {
-            const newButton = document.createElement("button");
-            newButton.innerText = shuffledObject.options;
-            newButton.classList.add('btn', 'white-black');
-            if (answer.correct) {
-                newButton.dataset.correct = answer.correct;
-                }
-                newButton.addEventListener("click", onAnswerSelected);
-                answerButtons.appendChild(newButton);
-        });
     }
 
 
