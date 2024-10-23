@@ -9,7 +9,9 @@
 
 /*-------------BODY-------------------*/
 body {
-    background: url(../assets/images/background/beach.webp) center center/cover;
+    background: url(../assets/images/background/beach.webp) no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
 }
 
 /* ------------CONTAINER------------ */
@@ -36,6 +38,10 @@ body {
     border-radius: 5px;
     max-width: 90%;
     max-height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn {
