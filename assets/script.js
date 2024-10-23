@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded") => {
     let shuffledQuestions = topic.sort(Math.random() - 0.5);
     let currentQuestionIndex = 0;
     let answerButtons = document.getElementById("answers-container").children;
+}
 
     //Paulina
     //marker 1
@@ -30,12 +31,7 @@ document.addEventListener("DOMContentLoaded") => {
 
 
 //Kate
-//marker 3
-
-
-
-//Ellie
-//marker 4
+//marker 3\
 
     function setNextQuestion() {
         showNextQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -55,11 +51,42 @@ document.addEventListener("DOMContentLoaded") => {
                 answerButtons.appendChild(newButton);
         });
     }
-  
-    
+ 
 
 
+//Ellie
+//marker 4
 
-//Luke
-//marker 5
-;
+function onAnswerSelected(e) {
+    const answerButtons = document.querySelector('.answer-btn');
+    answerButtons.forEach(button => {
+    e.target.classList.add('selected');
+    });
+    button.classList.remove('selected');
+}
+	
+add attribute class “selected” or “choice” to answer button clicked
+create a css style targeting the selected class to give it a border colour to highlight
+if answer changes remove previous “selected” class (use toggle for this?)
+	and apply selected to new choice of button
+
+    function onAnswerSelected(e) {
+        // Get the clicked button element
+        const answerButtons = e.target;
+      
+        // Toggle the 'selected' class on the clicked button
+        answerButtons.classList.toggle('selected');
+      
+        // Remove the 'selected' class from all other buttons
+        const otherButtons = document.querySelectorAll('button:not(.selected)');
+        otherButtons.forEach(button => button.classList.remove('selected'));
+      }
+}
+
+
+// //Luke
+// //marker 5
+
+
+// //marker 6
+// finishedQuizScene()
