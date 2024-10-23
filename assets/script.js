@@ -60,11 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const newButton = document.createElement("button");
             newButton.innerText = shuffledObject.options[option];
             newButton.classList.add('btn', 'white-black');
-            if (option === answer) {
-                newButton.dataset.correct = true;
-                }
-                newButton.addEventListener("click", onAnswerSelected);
-                answerButtons.appendChild(newButton);
+
+            if (option == answer) {
+                newButton.setAttribute("data-answer", "true");
+            }
+            newButton.addEventListener("click", onAnswerSelected);
+            answerButtons.appendChild(newButton);
         }
     }
 
@@ -78,13 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
     //Ellie
     //marker 4
     
-    function onAnswerSelected(e) {
-        const answerButtons = document.querySelector('.answer-btn');
-        answerButtons.forEach(button => {
-            e.target.classList.add('selected');
-        });
-        button.classList.remove('selected');
-    }
+    // function onAnswerSelected(e) {
+    //     const answerButtons = document.querySelector('.answer-btn');
+    //     answerButtons.forEach(button => {
+    //         e.target.classList.add('selected');
+    //     });
+    //     button.classList.remove('selected');
+    // }
 	
     // add attribute class “selected” or “choice” to answer button clicked
     // create a css style targeting the selected class to give it a border colour to highlight
