@@ -7,6 +7,11 @@
     font-family: Lato, sans-serif;
 }
 
+/*-------------BODY-------------------*/
+body {
+    background: url() center center/cover;
+}
+
 /* ------------CONTAINER------------ */
 .center {
     margin: auto;
@@ -29,6 +34,7 @@
 #quiz-container {
     padding: 20px;
     border-radius: 5px;
+    max-width: 75%
 }
 
 .btn {
