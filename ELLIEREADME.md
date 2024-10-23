@@ -75,3 +75,47 @@ Timer used to display delay issue https://www.online-stopwatch.com/
 
 //Enjoy the Quiz!
 
+
+## Unfixed Bugs / Issues
+<br>
+<table>
+  <tr>
+    <th>Bug/Issue</th>
+    <th>Image</th>
+    <th>Resolution</th>
+  </tr>
+  <td>Logo too large on mobile/tablet</td>
+    <td><img src="" alt=""></td>
+    
+  <td>Apply media queries for responsive design</td>
+  </tr>
+      
+  </tr>
+    <td>Background repeating on larger devices</td>
+    <td><img src="" alt=""></td>
+    
+  <td>Apply no repeat or fixed size for larger devices</td>
+  </tr>
+    
+  </tr>
+  <td>Answer buttons need to stack on smaller devices</td>
+    <td><img src="" alt=""></td>
+    <td>Add padding/flexbox to buttons to ensure centering and flexbox</td>
+      <tr>
+      <td></td>
+      <br>
+    <td><img src="" alt=""></td>
+    <td><br><br<br><br><br></td>
+  </tr>
+  <tr>
+      <td></td>
+    <td><img src="" alt=""></td>
+    <td></td>
+    
+    
+  <table>
+  
+  </tr>
+
+  </table>
+
