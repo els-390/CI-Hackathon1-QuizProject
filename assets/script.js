@@ -108,7 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Luke
     //marker 5
-    function onNextButton() {            
+    function onNextButton() {
+        nextButton.classList.toggle("hide");     
         currentQuestionIndex++;
         if (currentQuestionIndex < shuffledQuestions.length) {
             removeLastQuestion();
