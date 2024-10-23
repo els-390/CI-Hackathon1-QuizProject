@@ -133,6 +133,18 @@ document.addEventListener("DOMContentLoaded", () => {
         userScore = 0;
         currentQuestionIndex = 0;
         shuffledQuestions = shuffle(topic);
-
     }
+
+    function shuffleQuestions (topicName) {
+        for (let questionSet of questionsArray) {
+            // console.log
+            console.log(questionSet.topic, topicName);
+            console.log(questionSet.topic == topicName);
+            
+            if (questionSet.topic == topicName){
+                console.log(topic, topicName);
+                console.log(topic == topicName);
+                return questionSet.questions.sort(() => Math.random() - 0.5);
+            }
+        }
 });
