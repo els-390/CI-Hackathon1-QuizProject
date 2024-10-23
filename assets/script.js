@@ -134,6 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function resetVars() {
+        resetButton.classList.toggle("hide");
+
         userScore = 0;
         currentQuestionIndex = 0;
         // Insert way to change topic selected??
