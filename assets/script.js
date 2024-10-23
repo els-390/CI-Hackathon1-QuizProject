@@ -11,11 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentQuestionIndex = 0;
     let answerButtons = document.getElementById("answers-container");
 
+    let userScore = 0;
 
 
     //Paulina
     //marker 1
     startButton.addEventListener("click", startQuiz);
+    nextButton.addEventListener("click", onNextButton);
 
     function startQuiz() {
         currentQuestionIndex = 0;
@@ -77,25 +79,28 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (selectedButton.getAttribute("data-answer")) {
             questionsContainer.style.backgroundColor = "green";
-            swal({
-                title: "Good job!",
-                text: "You got the right answer!",
-                icon: "success",
-                button: document.getElementById("next"),
-            });
+            // swal({
+            //     title: "Good job!",
+            //     text: "You got the right answer!",
+            //     icon: "success",
+            //     button: document.getElementById("next"),
+            // });
+            userScore++;
         } else {
             questionsContainer.style.backgroundColor = "red";
-            swal({
-                title: "Good try! but...",
-                text: "You got the wrong answer!",
-                icon: "warning",
-                button: document.getElementById("next"),
-            });
+            // swal({
+            //     title: "Good try! but...",
+            //     text: "You got the wrong answer!",
+            //     icon: "warning",
+            //     button: document.getElementById("next"),
+            // });
         }
         
         for (let button of answerButtons.children) {
             button.disabled = true;
         }
+
+        nextButton.classList.toggle("hide");
 
         // Remove the 'selected' class from all other buttons
         const otherButtons = document.querySelectorAll('button:not(.selected)');
