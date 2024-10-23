@@ -79,6 +79,16 @@ body {
     font-weight: bold;
 }
 
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    margin: 5px;
+}
+.selected {
+    border: 2px solid blue;
+  }
+
 /* by class */
 
 /* ------------SKINS------------ */
