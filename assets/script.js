@@ -45,16 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const nextQuestion = document.getElementById("question");
         const answer = shuffledQuestions[currentQuestionIndex].answer;
         nextQuestion.innerText = shuffledObject.question;
-        // shuffledObject.options.forEach(answer => {
-        //     const newButton = document.createElement("button");
-        //     newButton.innerText = shuffledObject.options;
-        //     newButton.classList.add('btn', 'white-black');
-        //     if (answer.correct) {
-        //         newButton.dataset.correct = answer.correct;
-        //         }
-        //         newButton.addEventListener("click", onAnswerSelected);
-        //         answerButtons.appendChild(newButton);
-        // });
+
         for (let option in shuffledObject.options) {
             console.log(option);
             const newButton = document.createElement("button");
@@ -68,47 +59,30 @@ document.addEventListener("DOMContentLoaded", () => {
             answerButtons.appendChild(newButton);
         }
     }
-
-
-    // for each question
-    // make new answer button for each answer
-    // 
-    
     
     
     //Ellie
     //marker 4
-    
-    // function onAnswerSelected(e) {
-    //     const answerButtons = document.querySelector('.answer-btn');
-    //     answerButtons.forEach(button => {
-    //         e.target.classList.add('selected');
-    //     });
-    //     button.classList.remove('selected');
-    // }
-	
-    // add attribute class “selected” or “choice” to answer button clicked
-    // create a css style targeting the selected class to give it a border colour to highlight
-    // if answer changes remove previous “selected” class (use toggle for this?)
-	// and apply selected to new choice of button
-    
+   
     function onAnswerSelected(e) {
         // Get the clicked button element
-        const answerButtons = e.target;
+        const selectedButton = e.target;
+        
         
         // Toggle the 'selected' class on the clicked button
-        answerButtons.classList.toggle('selected');
+        selectedButton.classList.toggle('selected');
         
         console.log("log answer buttons:", answerButtons);
 
-        if (answerButtons.getAttribute("data-answer")) {
+        
+        if (selectedButton.getAttribute("data-answer")) {
             questionsContainer.style.backgroundColor = "green";
             swal({
                 title: "Good job!",
                 text: "You got the right answer!",
                 icon: "success",
                 button: "Next",
-              });
+            });
         } else {
             questionsContainer.style.backgroundColor = "red";
             swal({
@@ -116,7 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 text: "You got the wrong answer!",
                 icon: "warning",
                 button: "Next",
-              });
+            });
+
+            for (let button of answerButtons.children) {
+                button.disabled = true;
+            }
         }
 
         // Remove the 'selected' class from all other buttons
