@@ -37,6 +37,27 @@ document.addEventListener("DOMContentLoaded") => {
 //Ellie
 //marker 4
 
+    function setNextQuestion() {
+        showNextQuestion(shuffledQuestions[currentQuestionIndex]);
+    }
+    
+    function showNextQuestion(question) {
+        const nextQuestion = document.getElementById("question");
+        nextQuestion.innerText = questionsArray.topic.question;
+        question.options.forEach(answer => {
+            const newButton = document.createElement("button");
+            newButton.innerText = options[topic.questions.answer];
+            newButton.classList.add("btn white-black");
+            if (answer.correct) {
+                newButton.dataset.correct = answer.correct;
+                }
+                newButton.addEventListener("click", onAnswerSelected);
+                answerButtons.appendChild(newButton);
+        });
+    }
+  
+    
+
 
 
 //Luke
