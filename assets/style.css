@@ -39,8 +39,6 @@
 .btn {
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: black;
-    color: white;
     border: none;
     border-radius: 5px;
     display: block;
@@ -72,6 +70,11 @@ h1 {
 
 
 /* ------------SKINS------------ */
+
+.white-black {
+    color: white;
+    background-color: black;
+}
 
 .hide {
     display: none;
