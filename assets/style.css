@@ -3,13 +3,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding: 5px;
     font-family: Lato, sans-serif;
 }
 
 /*-------------BODY-------------------*/
 body {
-    background: url() center center/cover;
+    background: url(../assets/images/background/beach.webp) center center/cover;
 }
 
 /* ------------CONTAINER------------ */
@@ -34,7 +34,8 @@ body {
 #quiz-container {
     padding: 20px;
     border-radius: 5px;
-    max-width: 75%
+    max-width: 90%;
+    max-height: 100vh;
 }
 
 .btn {
@@ -82,7 +83,7 @@ body {
 }
 
 .background-skin {
-    background-color: rgba(121, 116, 116, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .hide {
