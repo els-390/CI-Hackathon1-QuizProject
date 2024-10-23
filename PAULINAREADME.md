@@ -7,7 +7,7 @@
     <th>Bugs / Issues - tested across viewports of all devices using Google Dev Tools</th>
   </tr>
    <tr>
-    <td>As a user, I want a flowing, integrated user experience. </td>
+    <td>As a user, I want a welcoming page, so that I know what the quiz gave is about. </td>
     <td>No bugs or issues that make interaction with site feel awkward</td>
     <td>1. Three second delay between selecting answer and next question <br>
     2. On large devices the "Enter name" box obscures the brand logo and feels like a pop-up rather than an integrated element of the UX package</td>
@@ -15,7 +15,7 @@
     
   </tr>
   <tr>
-    <td>As a user, I want the questions and answers to be clear and unambiguous.</td>
+    <td>As a user, I want to be able o take the quiz .</td>
     <td>Questions clearly phrased. Text clearly delineated against background.</td>
     <td>Occasional spelling errors e.g. "Introduced" spelt 'introudced'.</td>
   
@@ -54,12 +54,6 @@
     
   </tr>
   <tr>
-    <td>As a user, I want to receive feedback on the answers.</td>
-    <td>Clear signal of correct / incorrect answer</td>
-    <td>None detected</td>
-    
-  </tr>
-  <tr>
     <td>As a user, I want the site to be visually appealing.</td>
     <td> Select complementary colour scheme. <br>
     Different elements/features delineated.</td>
@@ -72,21 +66,10 @@
     <td>None detected</td>
     
   </tr>
-   <tr>
-    <td>As a site owner, I want to use an API so that I can source questions from an outside repository.</td>
-    <td>Questions load clearly in each different category and difficulty</td>
-    <td>Sometimes quiz repeats questions, or includes them from higher difficulties.</td>
-    
-  </tr>
       <td>As a user, I want to sort the questions by categories so I can test myself on specific topics.</td>
     <td>Drop-down menu specifying topic category</td>
     <td>None detected</td>
-    <tr>
-      <td>As a user I want to challenge myself against different degrees of difficulty depending on my level of knowledge</td>
-    <td>Drop-down menu specifying difficulty level</td>
-    <td>Sometimes quiz repeats questions, or includes them from higher difficulties.</td>
-    </tr>
-    <tr>
+  <tr>
     <td>As a user, I want to be greeted by name when I enter the website for personalisation and to feel welcome.</td>
     <td>Input Name field and have name saved when user returns (cookies required)</td>
     <td>None detected</td>
