@@ -4,10 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const startButton = document.getElementById("start");
     const nextButton = document.getElementById("next");
+    const resetButton = document.getElementById("reset");
+
     const questionsContainer = document.getElementById("questions-container");
-    let topic = questionsArray[0].questions;
+    // const topic = questionsArray[0].questions;
+    let topic = "Cornwall";
     //change shuffledQuestions to a function later
-    let shuffledQuestions = topic.sort(() => Math.random() - 0.5);
+    let shuffledQuestions = shuffleQuestions(topic);
+    // let shuffledQuestions = topic;
     let currentQuestionIndex = 0;
     let answerButtons = document.getElementById("answers-container");
 
@@ -18,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //marker 1
     startButton.addEventListener("click", startQuiz);
     nextButton.addEventListener("click", onNextButton);
+    resetButton.addEventListener("click", resetVars);
 
     function startQuiz() {
-        currentQuestionIndex = 0;
         startButton.classList.add("hide");
         questionsContainer.classList.remove("hide");
         removeLastQuestion();
@@ -99,10 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         nextButton.classList.toggle("hide");
-
-        // Remove the 'selected' class from all other buttons
-        const otherButtons = document.querySelectorAll('button:not(.selected)');
-        otherButtons.forEach(button => button.classList.remove('selected'));
     }
 
 
@@ -113,9 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < shuffledQuestions.length) {
             removeLastQuestion();
-        } else if (currentQuestionIndex == shuffledQuestions.length) {
+        } else if (currentQuestionIndex === shuffledQuestions.length) {
             // finishedQuizScene();
             console.log("create finished quiz scene function");
+            finishedQuizScene();
         } else {
             console.log("Luke messed this if up");
         }
@@ -123,5 +124,15 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // //marker 6
     // finishedQuizScene()
-    
+    // needs more than this, will add on Thursday, but needed boilerplate for now.
+    function finishedQuizScene () {
+        resetButton.classList.toggle("hide");
+    }
+
+    function resetVars() {
+        userScore = 0;
+        currentQuestionIndex = 0;
+        shuffledQuestions = shuffle(topic);
+
+    }
 });
