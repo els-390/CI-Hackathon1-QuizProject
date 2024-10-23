@@ -109,7 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
     //Luke
     //marker 5
     function onNextButton() {
-        nextButton.classList.toggle("hide");     
+        nextButton.classList.toggle("hide");
+        questionsContainer.style.backgroundColor = "";
         currentQuestionIndex++;
         if (currentQuestionIndex < shuffledQuestions.length) {
             removeLastQuestion();
@@ -120,21 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Luke messed this if up");
         }
         }
-    
-	// check which answer button has selected/choice
-	// if the button with selected is the same array value as answer
-	// 	score increases by one
-    
-	// increase the current question index by 1
-    
-    // check if current question index + 1 is greater than shuffled question index array
-    // 	if false,
-    // 		call(removeLastQuestion)
-    // 	else if true,
-    // 		call(finishedQuizScene)
-    // 	else,
-    // 		log an error to the console saying luke typed out the wrong pseudo code
-    
     
     // //marker 6
     // finishedQuizScene()
