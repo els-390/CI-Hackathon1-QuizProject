@@ -14,17 +14,18 @@
     <div id="quiz-container" class="center background-skin">
 
         <header>
-            <img id="logo" class="" src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo" height = "200px">
+            <img id="logo" class="" src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Knowhow logo"
+                height="200px">
             <h1 class="">Kernow Know-How
             </h1>
         </header>
 
-        <div id="score-container" class="flex spread-itms">
+        <div id="score-container" class="flex spread-itms hide">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
         </div>
 
-        <div id="questions-container">
+        <div id="questions-container" class="hide">
             <p id="question">This is a question</p>
 
             <div id="answers-container" class="flex">
@@ -32,17 +33,17 @@
                 <button class="btn white-black answer-btn">Answer C</button>
                 <button class="btn white-black answer-btn">Answer B</button>
             </div>
-            
+
         </div>
 
         <div id="control-buttons" class="flex">
             <button id="start" class="btn white-black">Start</button>
-            <button id="next" class="btn white-black">Next</button>
+            <button id="next" class="btn white-black hide">Next</button>
         </div>
 
     </div>
 
-    <script src="assets/data.js"></script>          <!-- Data.js MUST be loaded first, as it does not need to wait for DOM. -->
+    <script src="assets/data.js"></script> <!-- Data.js MUST be loaded first, as it does not need to wait for DOM. -->
     <script src="assets/script.js"></script>
 
 </body>
