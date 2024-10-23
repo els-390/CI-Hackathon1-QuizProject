@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //marker 5
     function onNextButton() {
         nextButton.classList.toggle("hide");
-        questionsContainer.style.backgroundColor = "";
         currentQuestionIndex++;
         if (currentQuestionIndex < shuffledQuestions.length) {
             removeLastQuestion();
