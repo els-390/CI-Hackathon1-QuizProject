@@ -99,6 +99,26 @@ document.addEventListener("DOMContentLoaded", () => {
         // Toggle the 'selected' class on the clicked button
         answerButtons.classList.toggle('selected');
         
+        console.log("log answer buttons:", answerButtons);
+
+        if (answerButtons.getAttribute("data-answer")) {
+            questionsContainer.style.backgroundColor = "green";
+            swal({
+                title: "Good job!",
+                text: "You got the right answer!",
+                icon: "success",
+                button: "Next",
+              });
+        } else {
+            questionsContainer.style.backgroundColor = "red";
+            swal({
+                title: "Good try! but...",
+                text: "You got the wrong answer!",
+                icon: "warning",
+                button: "Next",
+              });
+        }
+
         // Remove the 'selected' class from all other buttons
         const otherButtons = document.querySelectorAll('button:not(.selected)');
         otherButtons.forEach(button => button.classList.remove('selected'));
