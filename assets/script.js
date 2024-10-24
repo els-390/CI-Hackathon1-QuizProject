@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         userScore = 0;
         scoreCounter.innerText = "";
+        hideAnswerButtonsToggle();
 
         currentQuestionIndex = 0;
         // Insert way to change topic selected??
@@ -152,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         answerButtons.classList.toggle("hide");
+        hideAnswerButtonsToggle();
         scoreCounter.classList.toggle("hide");
         resetButton.classList.toggle("hide");
 
@@ -169,4 +171,11 @@ document.addEventListener("DOMContentLoaded", () => {
             announce(message);
         }
     }
+
+    function hideAnswerButtonsToggle() {
+        for (let button of answerButtons.children) {
+            button.classList.toggle("hide");
+        }
+    }
+
 });
