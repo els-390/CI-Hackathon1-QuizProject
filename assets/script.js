@@ -151,20 +151,23 @@ document.addEventListener("DOMContentLoaded", () => {
         answerButtons.classList.toggle("hide");
         scoreCounter.classList.toggle("hide");
         resetButton.classList.toggle("hide");
-        
+
         if (userScore < 2) {
-            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             better luck next time!`
+            announce(message);
         } else if (userScore < 5) {
-            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             could you do better?`
+            announce(message);
         } else {
-            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             Great job!`
+            announce(message);
         }
-        
-        message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10`
-    
+    }
+
+    function announce(message) {
         document.getElementById("question").innerText = message;
     }
 });
