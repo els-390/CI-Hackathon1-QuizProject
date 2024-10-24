@@ -1,3 +1,6 @@
+/* ----------GOOGLE FONTS---------- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* ----------CSS RESET---------- */
 
 * {
@@ -67,7 +70,8 @@ body {
 }
 
 .start-btn:hover {
-    background-color: pink;
+    background-color: #f9bc3f;
+    color: #113850;
 }
 
 /* ------------CONTENT------------ */
@@ -79,11 +83,10 @@ h1 {
     font-weight: 400;
     font-style: normal;
     color: #f9bc3f;
-    text-shadow: 1px 1px 2px #618294, 0 0 1em #8cb5b9, 0 0 0.2em rgb(54, 54, 128);
+    text-shadow: 1px 1px 2px #113850, 0 0 1em #113850, 0 0 0.2em rgb(54, 54, 128);
 }
 
 p {
-    font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
     color: #113850;
@@ -114,6 +117,9 @@ p {
 .white-black {
     color: white;
     background-color: black;
+    white-space: nowrap;
+    width: 200px;
+    margin: 10px;
 }
 
 .background-skin {
@@ -123,3 +129,11 @@ p {
 .hide {
     display: none;
 }
+
+@media (max-width: 768px) {
+    #answers-container {
+        width: 100%;
+        /* Make buttons full width */
+        margin: 5px 0;
+        /* Adjust margins for vertical stacking */
+    }
