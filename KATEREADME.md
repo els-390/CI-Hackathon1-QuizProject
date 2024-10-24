@@ -62,9 +62,3 @@ At the end of the quiz the score is displayed along with a message that depends 
 In order to provide a better user experience on a smaller screen the answer buttons appear in a column.
 
 <img src="assets/images/responsiveness/small-screen-quiz.JPG" alt="Shows the quiz working with buttons in a column on a small screen">
-
-<strong>End game on a small screen.</strong>
-
-In future this will be fixed so that the questions dissappear on the final screen.
-
-<img src="assets/images/responsiveness/end-small-screen.JPG" alt="Shows the quiz working with buttons in a column on a small screen">
