@@ -48,7 +48,7 @@ const questionsArray = [
             {
                 // Question 8
                 question: "Which of the following harbours is located near St Ives, Cornwall?",
-                options: ["Falmouth Harbour", "Mousehole Harbour", "St Ives Harbour"],
+                options: ["Falmouth", "Mousehole", "St Ives"],
                 answer: 2,
             },
             {
@@ -82,7 +82,7 @@ const questionsArray = [
             {
                 //Question 13
                 question: "Which historical industry was a major part of Cornwall’s economy?",
-                options: ["Tin Mining", "Shipbuilding", "Textile Manufacturing"],
+                options: ["Tin Mining", "Shipbuilding", "Web Dev"],
                 answer: 0,
             },
 
