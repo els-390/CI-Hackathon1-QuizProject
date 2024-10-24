@@ -131,6 +131,14 @@ p {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #question {
+        font-size: 18px;Í
+    }
+    
     #answers-container {
         display: flex;
         flex-direction: column;

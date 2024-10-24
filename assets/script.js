@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
-            answerButtons.style.backgroundColor = "green";
-            // swal({
+            selectedButton.style.backgroundColor = "green";
+                    // swal({
             //     title: "Good job!",
             //     text: "You got the right answer!",
             //     icon: "success",
@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // });
             userScore++;
         } else {
-            answerContainer.style.backgroundColor = "red";
-            // swal({
+            selectedButton.style.backgroundColor = "red";
+              // swal({
             //     title: "Good try! but...",
             //     text: "You got the wrong answer!",
             //     icon: "warning",
