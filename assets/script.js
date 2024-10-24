@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
             button.disabled = true;
         }
     
-        if (currentQuestionIndex < 10) {
-            nextButton.classList.toggle("hide"); //reveals next button
-        }
-        else {
-            finishedQuizScene();
-        }
+        nextButton.classList.toggle("hide"); //reveals next button
+        // if (currentQuestionIndex < 10) {
+        // }
+        // else {
+        //     finishedQuizScene();
+        // }
     }
 
 
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function onNextButton() {
         nextButton.classList.toggle("hide");  //hides next button
     
-        questionsContainer.style.backgroundColor = "";
+        // questionsContainer.style.backgroundColor = "";
     
         currentQuestionIndex++;
     
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function announceScore() {
-        questionsContainer.classList.toggle("hide");
+        answerButtons.classList.toggle("hide");
         scoreCounter.classList.toggle("hide");
         resetButton.classList.toggle("hide");
         
