@@ -4,15 +4,15 @@ We have chosen a fun trivia quiz based on Cornish general knowledge.
 
 <strong>In-quiz page across multiple devices</strong>
 
-<img src="assets/images/readMeImages/amiresponsive/quiz-page.png" alt="Quiz page across different devices">
+<img src="assets/images/Readme/front screen.png" alt="Starting Quiz page across different devices">
 
 <strong>Mid-quiz page showing answer committed and feedback provided</strong>
 
-<img src="assets/images/readMeImages/quizpage/quizpage2.png" alt="Quiz being played">
+<img src="assets/images/Readme/Quiz page.png" alt="Quiz being played">
 
 <strong>Quiz complete screen</strong>
 
-<img src="assets/images/readMeImages/quizpage/quizcomplete.png" alt="Quiz complete page">
+<img src="assets/images/Readme/End screen.png" alt="Quiz complete page">
 
 ## Design Choices
 
