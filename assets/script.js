@@ -5,15 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const startButton = document.getElementById("start");
     const nextButton = document.getElementById("next");
     const resetButton = document.getElementById("reset");
+    const scoreCounter = document.getElementById("score");
 
     const questionsContainer = document.getElementById("questions-container");
-    const answerContainer = document.getElementById("answers-container");
     // const topic = questionsArray[0].questions;
     let topic = "Cornwall";
-
+    //change shuffledQuestions to a function later
     let questionSet = shuffledQuestions(topic);
-    console.log("original order", questionsArray[0].questions)
-    console.log("shuffled questions", questionSet);
     // let shuffledQuestions = topic;
     let currentQuestionIndex = 0;
     let answerButtons = document.getElementById("answers-container");
@@ -80,12 +78,16 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Toggle the 'selected' class on the clicked button
         selectedButton.classList.toggle('selected');
-
+    
         //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
             selectedButton.style.backgroundColor = "green";
+            if (!userScore) {
+                scoreCounter.classList.toggle("hide");
+            }
             userScore++;
-            document.getElementById("score").innerText = userScore;
+            let textScore = `Correct answers: ${userScore} out of ${10}`;
+            scoreCounter.innerText = textScore;
         } else {
             selectedButton.style.backgroundColor = "red";
         }
@@ -93,13 +95,13 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let button of answerButtons.children) {
             button.disabled = true;
         }
-
-        if (currentQuestionIndex + 1 < questionSet.length) {
-            nextButton.classList.toggle("hide"); //reveals next button
-        } else {
-            finishedQuizScene();
-        }
-
+    
+        nextButton.classList.toggle("hide"); //reveals next button
+        // if (currentQuestionIndex < 10) {
+        // }
+        // else {
+        //     finishedQuizScene();
+        // }
     }
 
 
@@ -107,18 +109,22 @@ document.addEventListener("DOMContentLoaded", () => {
     //marker 5
     function onNextButton() {
         nextButton.classList.toggle("hide");  //hides next button
-
-        questionsContainer.style.backgroundColor = "";
-
+    
+        // questionsContainer.style.backgroundColor = "";
+    
         currentQuestionIndex++;
-        removeLastQuestion();
+    
+        if (currentQuestionIndex != 10) {
+            removeLastQuestion();
+        } else {
+            announceScore();
         }
+    }
     
     // //marker 6
     // finishedQuizScene()
     // needs more than this, will add on Thursday, but needed boilerplate for now.
     function finishedQuizScene () {
-
         resetButton.classList.toggle("hide");
     }
 
@@ -141,5 +147,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-
+    function announceScore() {
+        answerButtons.classList.toggle("hide");
+        scoreCounter.classList.toggle("hide");
+        resetButton.classList.toggle("hide");
+        
+        if (userScore < 2) {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            better luck next time!`
+        } else if (userScore < 5) {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            could you do better?`
+        } else {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            Great job!`
+        }
+        
+        message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10`
+    
+        document.getElementById("question").innerText = message;
+    }
 });

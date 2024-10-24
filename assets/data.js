@@ -36,7 +36,7 @@ const questionsArray = [
             {
                 // Question 6
                 question: "Who was a famous artist from Newlyn, Cornwall?",
-                options: ["Jogn Singer Sargent", "Walter Sickert", "Laura Knight"],
+                options: ["John Singer Sargent", "Walter Sickert", "Laura Knight"],
                 answer: 2,
             },
             {
@@ -69,7 +69,7 @@ const questionsArray = [
                 //Question 11
                 question: "What is the Cornish name for Cornwall?",
                 options: ["Cernow", "Kernow","Kernev"],
-                answer: 2,
+                answer: 1,
             },
 
             {
@@ -130,9 +130,9 @@ const questionsArray = [
 
             {
                 //Question 20
-                question: "What is the name of the Cornish mythological figure associated with King Arthur?",
-                options: ["Tristan", "Uther Pendragon", "Merlin"],
-                answer: 2,
+                question: "What rugby team plays in the Mennaye field?",
+                options: ["Pirates", "Seagulls", "Pasties"],
+                answer: 0,
             },
         ]
     },
