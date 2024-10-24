@@ -11,7 +11,7 @@
 
 
   <tr>
-    <td>As a user I want to be able to veiw my previous scores and see my personal best.</td>
+    <td>As a user, I want to be able to view my previous scores and see my personal best.</td>
     <td>Highest score from previous use visible (cookies required)</td>
     <td>N/A</td>
   </tr>
@@ -58,14 +58,14 @@
     <th>Bug/Issue</th>
     <th>Resolution</th>
   </tr>
-  <td>The Reset button would not apear after last question</td>
+  <td>The Reset button would not appear after the last question.</td>
      
-  <td>We moved the function into an earlier point in the call list to unsure we called this function first. </td>
+  <td>We moved the function to an earlier point in the call list to ensure this function was called first. </td>
   </tr>
       
   </tr>
     <td>The answer buttons would not shrink to fit on mobile screen</td>
-  <td>We added media quieries to aid the responsivness</td>
+  <td>We added media queries to aid responsiveness</td>
   </tr>
       
   </tr>
