@@ -312,13 +312,13 @@ For HTML validation https://validator.w3.org/
 
 One issue detected and fixed.
 
-<img src="assets/images/validator html.png" alt="html validation screenshot">
+<img src="assets/images/validator-html.png" alt="html validation screenshot">
 
 For CSS validation https://jigsaw.w3.org/css-validator/
 
 One typo detected and fixed. 
 
-<img src="assets/images/validator css.png" alt="css validation screenshot">
+<img src="assets/images/validator-css.png" alt="css validation screenshot">
   
 ## Deployment
 
