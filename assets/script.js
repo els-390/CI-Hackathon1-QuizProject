@@ -97,11 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     
         nextButton.classList.toggle("hide"); //reveals next button
-        // if (currentQuestionIndex < 10) {
-        // }
-        // else {
-        //     finishedQuizScene();
-        // }
     }
 
 
@@ -130,8 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function resetVars() {
         resetButton.classList.toggle("hide");
+        scoreCounter.classList.add("hide");
+        answerButtons.classList.toggle("hide");
 
         userScore = 0;
+        scoreCounter.innerText = "";
+
         currentQuestionIndex = 0;
         // Insert way to change topic selected??
         questionSet = shuffledQuestions(topic);
@@ -148,23 +147,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function announceScore() {
+        const announce = (message) => {
+            document.getElementById("question").innerText = message;
+        }
+
         answerButtons.classList.toggle("hide");
         scoreCounter.classList.toggle("hide");
         resetButton.classList.toggle("hide");
-        
+
         if (userScore < 2) {
-            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             better luck next time!`
+            announce(message);
         } else if (userScore < 5) {
-            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             could you do better?`
+            announce(message);
         } else {
-            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             Great job!`
+            announce(message);
         }
-        
-        message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10`
-    
-        document.getElementById("question").innerText = message;
     }
 });
