@@ -90,7 +90,7 @@ const questionsArray = [
                 //Question 14
                 question: "What is the name of the Cornish flag?",
                 options: ["Flag of St. David", "Flag of St. George", "Flag of St. Piran"],
-                answer: 3,
+                answer: 2,
             },
 
             {
