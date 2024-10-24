@@ -1,56 +1,67 @@
-<h1>Quiz-E by Quizzee Rascals README.MD</h1>
+<img src="assets/logos/KernowKnowHowLogoColor.webp" alt="Kernow Know-How logo" width="400">
+
+<h1>Kernow Know-How README.MD</h1>
 
 <h2>Introduction</h2>
 
-Quiz-E by Quizzee Rascals is an online quiz designed to allow users to test their general and subject-specific knowledge. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
+**Kernow Know-How** by Kernow Coders is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
 
-## Landing page for first time users
+Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children, for example when doing a school project. The quiz will provide 10 questions selected randomly from a bank of suitable material.
 
-The landing page allows users to provide their name so that they are greeted by name on return visits to personalise and improve user engagement.
-
-<strong>Landing page for first time users</strong>
-
-<img src="assets/images/readMeImages/amiresponsive/loginscreenpng.png" alt="Options page across different devices">
+Future additions will enable the user to test and enhance their knowledge on a wide variety of topics after they have completed the Cornish section of the quiz as well as allowing them to enter their details to save their progress. 
 
 
+## Main Page 
 
-## Options page (landing page for returning users) 
+The user is greeted with a beautiful image of a Cornish beach to tie in with the theme of the quiz.
 
-The Options page allows users to provide their name so that they are greeted by name on return visits. 
+It displays the Kernow Know-How brand logo clearly for brand recognition. Future features will provide the option to share the page and the user's scores with friends and family on social media.
 
-There are drop menus to adjust difficulty, category, how many questions, and question type. There is also a social media button to easily share Quiz-E. 
+A simple but effective start button is present so that the user knows immediately how to begin the game.
 
-It displays the Quizzee Rascals brand logo clearly for brand recognition. It also provides the option to share Quiz-E with friends and family on social media.
+<strong>Main page across multiple devices.</strong>
 
-<strong>Options page across multiple devices</strong>
-
-
-<img src="assets/images/readMeImages/amiresponsive/welcomeback.png" alt="Options page across different devices">
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="Main page across different devices">
 
 <br>
 
-<strong>Quiz length dropdown menu</strong>
+<strong>Quiz view.</strong>
  
+ Once the start button is clicked the questions are displayed with a choice of 3 possible answers.
 
-<img src="assets/images/readMeImages/options/questions.png" alt="Options page showing dropdown menu with different quiz lengths">
-
-<br>
-
-<strong>Quiz subject dropup menu</strong>
-
-<img src="assets/images/readMeImages/options/category.png" alt="Options page showing dropdown menu with different categories">
+<img src="assets/images/responsiveness/quizview-all-devices.webp" alt="Quiz view on all devices">
 
 <br>
 
-<strong>Quiz subject difficulty menu</strong>
+<strong>Quiz view showing a selected correct answer and the score counter.</strong>
 
-<img src="assets/images/readMeImages/options/difficulty.png" alt="Options page showing dropdown menu with different quiz difficulties">
+While the game is being played the user can choose an answer by clicking the relevant button. If the answer is correct the button will turn green and the score will increment by 1.
+
+<img src="assets/images/responsiveness/correct-counter.webp" alt="Quiz view showing selected correct answer and the score counter">
 
 <br>
 
-<strong>Quiz type difficulty menu</strong>
+<strong>Quiz view showing a selected wrong answer and the score counter.</strong>
 
-<img src="assets/images/readMeImages/options/type.png" alt="Options page showing dropdown menu with different quiz type i.e. multiple choice or true or false">
+If the answer selected by the user is wrong the button will turn red and the score will not change.
+
+<img src="assets/images/responsiveness/wrong.webp" alt="Quiz view showing selected wrong answer">
+
+<br>
+
+<strong>The end of the quiz.</strong>
+
+At the end of the quiz the score is displayed along with a message that depends on that score. A reset button will also appear fothe user to play again. 
+
+<img src="assets/images/responsiveness/endquiz.JPG" alt="End of quiz display">
+
+<br>
+
+<strong>Quiz view on a small screen.</strong>
+
+In order to provide a better user experience on a smaller screen the answer buttons appear in a column.
+
+<img src="assets/images/responsiveness/small-screen-quiz.JPG" alt="Shows the quiz working with buttons in a column on a small screen">
 
  ## Quiz page
 
@@ -105,117 +116,84 @@ We ensured that we provided wireframes to cover all the different stages of user
 ## User Stories, features and bugs
 
 <table>
+
   <tr>
     <th>User Story</th>
     <th>Features</th>
-    <th>Bugs / Issues - tested across viewports of all devices using Google Dev Tools</th>
+    <th>Bugs / Issues</th>
   </tr>
-   <tr>
-    <td>As a user, I want a flowing, integrated user experience. </td>
-    <td>No bugs or issues that make interaction with site feel awkward</td>
-    <td>1. Three second delay between selecting answer and next question <br>
-    2. On large devices the "Enter name" box obscures the brand logo and feels like a pop-up rather than an integrated element of the UX package</td>
-   
-    
-  </tr>
+
   <tr>
-    <td>As a user, I want the questions and answers to be clear and unambiguous.</td>
-    <td>Questions clearly phrased. Text clearly delineated against background.</td>
-    <td>Occasional spelling errors e.g. "Introduced" spelt 'introudced'.</td>
-  
-  </tr>
-   <tr>
-    <td>As a site owner, I want the logo clearly visible to increase brand recognition.</td>
-    <td>Logo clearly visible on landing/options page.</td>
-    <td>On first visit then "Enter Name" box covers brand logo on some devices</td>
+    <td>As a User, I want to test my knowledge about Cornwall, so I can see how well I know the region. </td>
+    <td>Questions could include identifying landmarks, beaches, and towns on a map, or recognizing key geographical features.</td>
+    <td>None detected</td>
+    </tr>
+
   <tr>
-    <td>As a user, I want it to be obvious how to proceed with the game.</td>
-    <td>Questions, and answer list clear, with feedback when answers clicked.</td>
+    <td>As a User, I want the quiz to have a clean and modern design, so it is visually appealing and easy to navigate.</td>
+    <td>High-quality images and icons making quiz engaging and visually rich</td>
     <td>None detected</td>
   </tr>
-  <tr>
-    <td>As a user, I want to be able to restart the game once I’ve finished.</td>
-    <td>Play again button at bottom of page when quiz complete</td>
-    <td>None deteced</td>
-    
-  </tr>
-  <tr>
-    <td>As a user, I want to be able to reset the game when I’ve made an error.</td>
-    <td>Reset / restart quiz button</td>
-    <td>None detected</td>
-    
-  </tr>
-  <tr>
-    <td>As a user, I want the site to be easily navigable.</td>
-    <td>Different features of site are clearly identifiable</td>
-    <td>None detected</td>
-    
-  </tr>
-  <tr>
-    <td>As a user, I want to be able to choose an answer from a pre-populated list.</td>
-    <td>List of answers to be selected</td>
-    <td>None detected</td>
-    
-  </tr>
-  <tr>
-    <td>As a user, I want to receive feedback on the answers.</td>
-    <td>Clear signal of correct / incorrect answer</td>
-    <td>None detected</td>
-    
-  </tr>
-  <tr>
-    <td>As a user, I want the site to be visually appealing.</td>
-    <td> Select complementary colour scheme. <br>
-    Different elements/features delineated.</td>
-    <td>None detected</td>
-    
-  </tr>
+
   <tr>
     <td>As a user, I want to be able to start the quiz.</td>
     <td>Page loads and includes necessary event listeners</td>
     <td>None detected</td>
-    
   </tr>
-   <tr>
-    <td>As a site owner, I want to use an API so that I can source questions from an outside repository.</td>
-    <td>Questions load clearly in each different category and difficulty</td>
-    <td>Sometimes quiz repeats questions, or includes them from higher difficulties.</td>
-    
-  </tr>
-      <td>As a user, I want to sort the questions by categories so I can test myself on specific topics.</td>
-    <td>Drop-down menu specifying topic category</td>
-    <td>None detected</td>
-    <tr>
-      <td>As a user I want to challenge myself against different degrees of difficulty depending on my level of knowledge</td>
-    <td>Drop-down menu specifying difficulty level</td>
-    <td>Sometimes quiz repeats questions, or includes them from higher difficulties.</td>
-    </tr>
-    <tr>
-    <td>As a user, I want to be greeted by name when I enter the website for personalisation and to feel welcome.</td>
-    <td>Input Name field and have name saved when user returns (cookies required)</td>
-    <td>None detected</td>
-  </tr>
-     <tr>
-    <td>As a user I want to see my score</td>
+
+  <tr>
+    <td>As a User, I want to be able to track my score, so I can measure my progress and improvement.</td>
     <td>Current score display to keep score updating</td>
     <td>None detected</td>
   </tr>
-    <tr>
+
+  <tr>
+    <td>As a User, I want to answer multiple-choice questions, so I can select from given options.
+    </td>
+    <td>Three buttons with possible choices </td>
+    <td>None detected</td>
+  </tr>
+  
+  <tr>
+    <td>As a user, I want to be able to restart the game once I’ve finished.</td>
+    <td>Play restart button at bottom of page when quiz complete</td>
+    <td>Questions to do not reset correctly if user achieves a score of zero</td>
+  </tr>
+
+  <tr>
+    <td>As a user, I want to be greeted by name when I enter the website for personalisation and to feel welcome.</td>
+    <td>Input Name field and have name saved when user returns (cookies required)</td>
+    <td>Ran out of time, feature for future iterations</td>
+  </tr>
+
+  <tr>
+    <td>As a user I want be able to select the quiz topic so that I can learn more about a topic.</td>
+    <td>Option to change quiz topic to another topic in future after completing the Cornish quiz topic.</td>
+    <td>Ran out of time, feature for future iterations</td>
+  </tr>
+
+  <tr>
     <td>As a user I want to be able to share the fun I am having doing the quiz, and challenge my friends.</td>
     <td>"Share with friends" copy link button. Post to FB / Instagram / X clickable icons.</td>
-    <td>Ran out of time to add Instagram and X icons</td>
+    <td>Ran out of time, feature for future iterations</td>
   </tr>
-    <tr>
-     <td>As a site owner I want to increase the visibility and thus usership of our website.</td>
+
+  <tr>
+    <td>As a site owner I want to increase the visibility and thus usership of our website.</td>
     <td>"Share with friends" copy link button. Post to FB / Instagram / X clickable icons.</td>
-    <td>Ran out of time to add Instagram and X icons</td>
+    <td>Ran out of time, feature for future iterations</td>
   </tr>
-    <tr>
-     <td>As a user, I want to be able to adjust the number of questions I am asked to try shorter or longer games.</td>
-    <td>Dropdown menu providing game length options</td>
-    <td>Sometimes quiz repeats questions, or includes them from higher difficulties.</td>
+
+  <tr>
+    <td>As a Cornish user, I would like to be able to take the quiz in Cornish.</td>
+    <td>Add the option to change the language of the quiz to Cornish. Or add a Cornish Translation Switch toggle for questions and answers.</td>
+    <td>Ran out of time, feature for future iterations</td>
   </tr>
+
   </table>
+
+<br>
+
 
 <br>
 
@@ -332,43 +310,73 @@ We ensured that we provided wireframes to cover all the different stages of user
 
   </table>
 
+### Tools and Technologies Used
+
+- HTML5
+
+- CSS3
+
+- Javascript
+
+- [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+- Gitpod - Code Institue cloud IDE
+
+//- [Font Awesome](fontawesome.com)
+
+- [Google Fonts](fonts.google.com)
+
+- [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhg)
+
+- [Unsplash](unsplash.com)
+
+- [Tinypng.com](Tinypng.com)
+
+### Accessibility Considerations
+
+- Utilising contrasting colours for the design and themes
+- Adding ALT tags to images and icons
+- Ensuring links open in new tabs when clicked
+
+## AI Tools Usage
+
+- Utilised Google Gemini, Claude, Perplexity and Chat GPT AI tools to research names for the website
+- Used Chat GPT to generate website logo
 
 ### Validator Testing 
 
 For HTML validation https://validator.w3.org/
 
-<img src="assets/images/readMeImages/html-validation.png" alt="html validation screenshot">
+One issue detected and fixed.
+
+<img src="assets/logos/KernowKnowHowLogoColor.webp" alt="html validation screenshot">
 
 For CSS validation  https://jigsaw.w3.org/css-validator/
 
 <img src="assets/images/readMeImages/css-validation.png" alt="css validation screenshot">
   
 
+//## Deployment
 
+//Site successfully deployed on https://kjwhitehead.github.io/quizzee_rascals/
 
-## Deployment
+//## Credits 
 
-Site successfully deployed on https://kjwhitehead.github.io/quizzee_rascals/
+//Color Scheme: “Bright Accent Colors” https://visme.co/blog/website-color-schemes/
 
-## Credits 
+//### Content 
 
-Color Scheme: “Bright Accent Colors” https://visme.co/blog/website-color-schemes/
+//Timer used to display delay issue https://www.online-stopwatch.com/
 
-### Content 
+//Responsiveness displayed on https://ui.dev/amiresponsive
 
-Timer used to display delay issue https://www.online-stopwatch.com/
+//API Questions taken from https://opentdb.com/
 
-Responsiveness displayed on https://ui.dev/amiresponsive
+//Code initially inspired by and re-written https://opentdb.com/
 
-API Questions taken from https://opentdb.com/
+//For validation in HTML https://validator.w3.org/
 
-Code initially inspired by and re-written https://opentdb.com/
-
-Logo from Canva https://www.canva.com/
-
-For validation in HTML https://validator.w3.org/
-
-For validation in CSS https://jigsaw.w3.org/css-validator/
+//For validation in CSS https://jigsaw.w3.org/css-validator/
 
 For ReadME table https://www.shecodes.io/athena/2362-creating-a-table-with-4-columns-and-4-rows-in-html
 
@@ -377,6 +385,7 @@ Wireframes produced using Balsamiq WireFrames https://balsamiq.com/wireframes/?g
 Timer used to display delay issue https://www.online-stopwatch.com/
 
 
-## Other General Project Advice
+//## Other General Project Advice
 
-Enjoy the Quiz!
+//Enjoy the Quiz!
+
