@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetButton = document.getElementById("reset");
 
     const questionsContainer = document.getElementById("questions-container");
+    const answerContainer = document.getElementById("answers-container");
     // const topic = questionsArray[0].questions;
     let topic = "Cornwall";
 
