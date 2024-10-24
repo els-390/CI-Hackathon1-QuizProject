@@ -1,5 +1,67 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  //all JS code in here:
+
+  const startButton = document.getElementById("start");
+  const nextButton = document.getElementById("next");
+  const resetButton = document.getElementById("reset");
+
+  const questionsContainer = document.getElementById("questions-container");
+  const answerContainer = document.getElementById("answers-container");
+  // const topic = questionsArray[0].questions;
+  let topic = "Cornwall";
+  //change shuffledQuestions to a function later
+  let questionSet = shuffledQuestions(topic);
+  // let shuffledQuestions = topic;
+  let currentQuestionIndex = 0;
+  let answerButtons = document.getElementById("answers-container");
+
+  let userScore = 0;
+
+  //Paulina
+  //marker 1
+  startButton.addEventListener("click", startQuiz);
+  nextButton.addEventListener("click", onNextButton);
+  resetButton.addEventListener("click", resetVars);
+
+  function startQuiz() {
+    startButton.classList.add("hide");
+    questionsContainer.classList.remove("hide");
+    removeLastQuestion();
+  }
+
+  //Becky
+  //marker 2
+  function removeLastQuestion() {
+    document.getElementById("question").innerText = "";
+    answerButtons.innerHTML = "";
+    setNextQuestion();
+  }
+
+  //Kate
+  //marker 3\
+
+  function setNextQuestion() {
+    showNextQuestion(questionSet[currentQuestionIndex]);
+  }
+
+  function showNextQuestion(shuffledObject) {
+    const nextQuestion = document.getElementById("question");
+    const answer = questionSet[currentQuestionIndex].answer;
+    nextQuestion.innerText = shuffledObject.question;
+
+    for (let option in shuffledObject.options) {
+      console.log(option);
+      const newButton = document.createElement("button");
+      newButton.innerText = shuffledObject.options[option];
+      newButton.classList.add("btn", "white-black");
+
+      if (option == answer) {
+        newButton.setAttribute("data-answer", "true");
+      }
+      newButton.addEventListener("click", onAnswerSelected);
+      answerButtons.appendChild(newButton);
+
     //all JS code in here:
 
     const startButton = document.getElementById("start");
@@ -33,23 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         questionsContainer.classList.remove("hide");
         removeLastQuestion();
     }
-
-    //Becky
-    //marker 2
-    function removeLastQuestion () {
-        document.getElementById("question").innerText = "";
-        answerButtons.innerHTML = "";
-        setNextQuestion();
-    }
-    
-    
-    
-    //Kate
-    //marker 3\
-    
-    function setNextQuestion() {
-        showNextQuestion(questionSet[currentQuestionIndex]);
-    }
+  }
     
     function showNextQuestion(shuffledObject) {
         const nextQuestion = document.getElementById("question");
@@ -106,7 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
             finishedQuizScene();
         }
 
-    }
 
 
     //Luke
@@ -133,8 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resetButton.classList.toggle("hide");
     }
 
-    function resetVars() {
-        resetButton.classList.toggle("hide");
+    questionsContainer.style.backgroundColor = "";
 
         userScore = 0;
         currentQuestionIndex = 0;
@@ -144,13 +188,39 @@ document.addEventListener("DOMContentLoaded", () => {
         removeLastQuestion();
     }
 
-    function shuffledQuestions (topicName) {
-        for (let questionSet of questionsArray) {
-            
-            if (questionSet.topic == topicName){
-                return questionSet.questions.sort(() => Math.random() - 0.5);
-            }
-        }
+    if (currentQuestionIndex < questionSet.length) {
+      removeLastQuestion();
+    } else if (currentQuestionIndex === questionSet.length) {
+      // finishedQuizScene();
+      console.log("create finished quiz scene function");
+      finishedQuizScene();
+    } else {
+      console.log("Luke messed this if up");
+    }
+  }
+
+  // //marker 6
+  // finishedQuizScene()
+  // needs more than this, will add on Thursday, but needed boilerplate for now.
+  function finishedQuizScene() {
+    resetButton.classList.toggle("hide");
+  }
+
+  function resetVars() {
+    resetButton.classList.toggle("hide");
+
+    userScore = 0;
+    currentQuestionIndex = 0;
+    // Insert way to change topic selected??
+    questionSet = shuffledQuestions(topic);
+    removeLastQuestion();
+  }
+
+  function shuffledQuestions(topicName) {
+    for (let questionSet of questionsArray) {
+      if (questionSet.topic == topicName) {
+        return questionSet.questions.sort(() => Math.random() - 0.5);
+      }
     }
 
     function announceScore() {
@@ -173,6 +243,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.getElementById("question").innerText = message;
     }
-
-
 });

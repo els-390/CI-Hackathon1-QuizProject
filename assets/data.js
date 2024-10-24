@@ -36,7 +36,7 @@ const questionsArray = [
             {
                 // Question 6
                 question: "Who was a famous artist from Newlyn, Cornwall?",
-                options: ["Jogn Singer Sargent", "Walter Sickert", "Laura Knight"],
+                options: ["John Singer Sargent", "Walter Sickert", "Laura Knight"],
                 answer: 2,
             },
             {
