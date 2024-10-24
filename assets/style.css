@@ -39,7 +39,7 @@ body {
 
 /* ------------STRUCTURES------------ */
 #quiz-container {
-    padding: 20px;
+    padding: 12px;
     border-radius: 5px;
     max-width: 90%;
     max-height: 100vh;
@@ -54,7 +54,7 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    /* cursor:pointer; */
+    cursor:poiner;
 }
 
 .btn:hover {
@@ -62,7 +62,6 @@ body {
 }
 
 .start-btn {
-    /* display: ; */
     margin: 20px auto;
     padding: 10px 20px;
     border: none;
@@ -70,8 +69,9 @@ body {
 }
 
 .start-btn:hover {
-    background-color: #f9bc3f;
-    color: #113850;
+        background-color: white;
+        cursor: pointer;
+        color: #113850;
 }
 
 /* ------------CONTENT------------ */
@@ -99,18 +99,39 @@ p {
     font-weight: bold;
 }
 
+#next, #reset {
+    font-weight: 600;
+    color: black;
+    background-color: #ffffff;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+#start.btn:hover, 
+#next.btn:hover, 
+#reset.btn:hover {
+    background-color: rgb(0, 0, 0, .5);
+    cursor: pointer;
+    color: white;
+    border-color: white;
+}
+
+
+/* by class */
+
 .btn {
     padding: 10px 20px;
     border: 1px solid #ffffff;
     cursor: pointer;
     margin: 5px;
+    font-size: 19px;
+    text-align: center;
 }
 
 .selected {
-    border: 5px solid #f9bc3f;
+    border: 3px solid #f9bc3f;
 }
-
-/* by class */
 
 /* ------------SKINS------------ */
 
@@ -129,6 +150,8 @@ p {
 .hide {
     display: none;
 }
+
+/* ------------MEDIA QUERIES------------ */
 
 @media (max-width: 768px) {
     h1 {

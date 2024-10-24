@@ -1,155 +1,150 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //all JS code in here:
 
-    //all JS code in here:
+  const startButton = document.getElementById("start");
+  const nextButton = document.getElementById("next");
+  const resetButton = document.getElementById("reset");
 
-    const startButton = document.getElementById("start");
-    const nextButton = document.getElementById("next");
-    const resetButton = document.getElementById("reset");
+  const questionsContainer = document.getElementById("questions-container");
+  const answerContainer = document.getElementById("answers-container");
+  // const topic = questionsArray[0].questions;
+  let topic = "Cornwall";
+  //change shuffledQuestions to a function later
+  let questionSet = shuffledQuestions(topic);
+  // let shuffledQuestions = topic;
+  let currentQuestionIndex = 0;
+  let answerButtons = document.getElementById("answers-container");
 
-    const questionsContainer = document.getElementById("questions-container");
-    const answerContainer = document.getElementById("answers-container");
-    // const topic = questionsArray[0].questions;
-    let topic = "Cornwall";
-    //change shuffledQuestions to a function later
-    let questionSet = shuffledQuestions(topic);
-    // let shuffledQuestions = topic;
-    let currentQuestionIndex = 0;
-    let answerButtons = document.getElementById("answers-container");
+  let userScore = 0;
 
-    let userScore = 0;
+  //Paulina
+  //marker 1
+  startButton.addEventListener("click", startQuiz);
+  nextButton.addEventListener("click", onNextButton);
+  resetButton.addEventListener("click", resetVars);
 
+  function startQuiz() {
+    startButton.classList.add("hide");
+    questionsContainer.classList.remove("hide");
+    removeLastQuestion();
+  }
 
-    //Paulina
-    //marker 1
-    startButton.addEventListener("click", startQuiz);
-    nextButton.addEventListener("click", onNextButton);
-    resetButton.addEventListener("click", resetVars);
+  //Becky
+  //marker 2
+  function removeLastQuestion() {
+    document.getElementById("question").innerText = "";
+    answerButtons.innerHTML = "";
+    setNextQuestion();
+  }
 
-    function startQuiz() {
-        startButton.classList.add("hide");
-        questionsContainer.classList.remove("hide");
-        removeLastQuestion();
+  //Kate
+  //marker 3\
+
+  function setNextQuestion() {
+    showNextQuestion(questionSet[currentQuestionIndex]);
+  }
+
+  function showNextQuestion(shuffledObject) {
+    const nextQuestion = document.getElementById("question");
+    const answer = questionSet[currentQuestionIndex].answer;
+    nextQuestion.innerText = shuffledObject.question;
+
+    for (let option in shuffledObject.options) {
+      console.log(option);
+      const newButton = document.createElement("button");
+      newButton.innerText = shuffledObject.options[option];
+      newButton.classList.add("btn", "white-black");
+
+      if (option == answer) {
+        newButton.setAttribute("data-answer", "true");
+      }
+      newButton.addEventListener("click", onAnswerSelected);
+      answerButtons.appendChild(newButton);
+    }
+  }
+
+  //Ellie
+  //marker 4
+
+  function onAnswerSelected(e) {
+    // Get the clicked button element
+    const selectedButton = e.target;
+
+    // Toggle the 'selected' class on the clicked button
+    selectedButton.classList.toggle("selected");
+
+    //checks whether answer selected is correct
+    if (selectedButton.getAttribute("data-answer")) {
+      selectedButton.style.backgroundColor = "green";
+      selectedButton.style.fontSize = "20px";
+      
+      // swal({
+      //     title: "Good job!",
+      //     text: "You got the right answer!",
+      //     icon: "success",
+      //     button: document.getElementById("next"),
+      // });
+      userScore++;
+    } else {
+      selectedButton.style.backgroundColor = "red";
+      selectedButton.style.fontSize = "20px";
+      // swal({
+      //     title: "Good try! but...",
+      //     text: "You got the wrong answer!",
+      //     icon: "warning",Í
+      //     button: document.getElementById("next"),
+      // });
     }
 
-    //Becky
-    //marker 2
-    function removeLastQuestion () {
-        document.getElementById("question").innerText = "";
-        answerButtons.innerHTML = "";
-        setNextQuestion();
-    }
-    
-    
-    
-    //Kate
-    //marker 3\
-    
-    function setNextQuestion() {
-        showNextQuestion(questionSet[currentQuestionIndex]);
-    }
-    
-    function showNextQuestion(shuffledObject) {
-        const nextQuestion = document.getElementById("question");
-        const answer = questionSet[currentQuestionIndex].answer;
-        nextQuestion.innerText = shuffledObject.question;
-
-        for (let option in shuffledObject.options) {
-            console.log(option);
-            const newButton = document.createElement("button");
-            newButton.innerText = shuffledObject.options[option];
-            newButton.classList.add('btn', 'white-black');
-
-            if (option == answer) {
-                newButton.setAttribute("data-answer", "true");
-            }
-            newButton.addEventListener("click", onAnswerSelected);
-            answerButtons.appendChild(newButton);
-        }
-    }
-    
-    
-    //Ellie
-    //marker 4
-   
-    function onAnswerSelected(e) {
-        // Get the clicked button element
-        const selectedButton = e.target;
-        
-        
-        // Toggle the 'selected' class on the clicked button
-        selectedButton.classList.toggle('selected');
-
-        //checks whether answer selected is correct
-        if (selectedButton.getAttribute("data-answer")) {
-            selectedButton.style.backgroundColor = "green";
-                    // swal({
-            //     title: "Good job!",
-            //     text: "You got the right answer!",
-            //     icon: "success",
-            //     button: document.getElementById("next"),
-            // });
-            userScore++;
-        } else {
-            selectedButton.style.backgroundColor = "red";
-              // swal({
-            //     title: "Good try! but...",
-            //     text: "You got the wrong answer!",
-            //     icon: "warning",
-            //     button: document.getElementById("next"),
-            // });
-        }
-        
-        for (let button of answerButtons.children) {
-            button.disabled = true;
-        }
-
-        nextButton.classList.toggle("hide");
+    for (let button of answerButtons.children) {
+      button.disabled = true;
     }
 
+    nextButton.classList.toggle("hide");
+  }
 
-    //Luke
-    //marker 5
-    function onNextButton() {
-        nextButton.classList.toggle("hide");
+  //Luke
+  //marker 5
+  function onNextButton() {
+    nextButton.classList.toggle("hide");
 
-        questionsContainer.style.backgroundColor = "";
-        
-        currentQuestionIndex++;
+    questionsContainer.style.backgroundColor = "";
 
-        if (currentQuestionIndex < questionSet.length) {
-            removeLastQuestion();
-        } else if (currentQuestionIndex === questionSet.length) {
-            // finishedQuizScene();
-            console.log("create finished quiz scene function");
-            finishedQuizScene();
-        } else {
-            console.log("Luke messed this if up");
-        }
-        }
-    
-    // //marker 6
-    // finishedQuizScene()
-    // needs more than this, will add on Thursday, but needed boilerplate for now.
-    function finishedQuizScene () {
-        resetButton.classList.toggle("hide");
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < questionSet.length) {
+      removeLastQuestion();
+    } else if (currentQuestionIndex === questionSet.length) {
+      // finishedQuizScene();
+      console.log("create finished quiz scene function");
+      finishedQuizScene();
+    } else {
+      console.log("Luke messed this if up");
     }
+  }
 
-    function resetVars() {
-        resetButton.classList.toggle("hide");
+  // //marker 6
+  // finishedQuizScene()
+  // needs more than this, will add on Thursday, but needed boilerplate for now.
+  function finishedQuizScene() {
+    resetButton.classList.toggle("hide");
+  }
 
-        userScore = 0;
-        currentQuestionIndex = 0;
-        // Insert way to change topic selected??
-        questionSet = shuffledQuestions(topic);
-        removeLastQuestion();
+  function resetVars() {
+    resetButton.classList.toggle("hide");
+
+    userScore = 0;
+    currentQuestionIndex = 0;
+    // Insert way to change topic selected??
+    questionSet = shuffledQuestions(topic);
+    removeLastQuestion();
+  }
+
+  function shuffledQuestions(topicName) {
+    for (let questionSet of questionsArray) {
+      if (questionSet.topic == topicName) {
+        return questionSet.questions.sort(() => Math.random() - 0.5);
+      }
     }
-
-    function shuffledQuestions (topicName) {
-        for (let questionSet of questionsArray) {
-            
-            if (questionSet.topic == topicName){
-                return questionSet.questions.sort(() => Math.random() - 0.5);
-            }
-        }
-    }
+  }
 });
