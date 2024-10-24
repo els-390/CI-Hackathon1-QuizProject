@@ -159,7 +159,7 @@ p {
     }
 
     #question {
-        font-size: 18px;Í
+        font-size: 18px;
     }
     
     #answers-container {
@@ -169,4 +169,4 @@ p {
         /* Make buttons full width */
         margin: 5px 0;
         /* Adjust margins for vertical stacking */
-    }
+    }}
