@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const startButton = document.getElementById("start");
     const nextButton = document.getElementById("next");
     const resetButton = document.getElementById("reset");
+    const scoreCounter = document.getElementById("score");
 
     const questionsContainer = document.getElementById("questions-container");
     const answerContainer = document.getElementById("answers-container");
@@ -130,8 +131,12 @@ document.addEventListener("DOMContentLoaded", () => {
         //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
             selectedButton.style.backgroundColor = "green";
+            if (!userScore) {
+                scoreCounter.classList.toggle("hide");
+            }
             userScore++;
-            document.getElementById("score").innerText = userScore;
+            textScore = `Correct answers: ${userScore} out of ${10}`;
+            document.getElementById("score").innerText = textScore;
         } else {
             selectedButton.style.backgroundColor = "red";
         }
@@ -140,9 +145,10 @@ document.addEventListener("DOMContentLoaded", () => {
             button.disabled = true;
         }
 
-        if (currentQuestionIndex + 1 < questionSet.length) {
+        if (currentQuestionIndex < 10) {
             nextButton.classList.toggle("hide"); //reveals next button
-        } else {
+        }
+        else {
             finishedQuizScene();
         }
 
@@ -156,7 +162,12 @@ document.addEventListener("DOMContentLoaded", () => {
         questionsContainer.style.backgroundColor = "";
 
         currentQuestionIndex++;
-        removeLastQuestion();
+
+        if (currentQuestionIndex != 10) {
+            removeLastQuestion();
+        } else {
+            announceScore();
+        }
         }
     
     // //marker 6
@@ -169,7 +180,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     questionsContainer.style.backgroundColor = "";
 
-    currentQuestionIndex++;
+        userScore = 0;
+        currentQuestionIndex = 0;
+        // Insert way to change topic selected??
+        questionSet = shuffledQuestions(topic);
+        scoreCounter.classList.toggle("hide");
+        removeLastQuestion();
+    }
 
     if (currentQuestionIndex < questionSet.length) {
       removeLastQuestion();
@@ -206,5 +223,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-  }
+    function announceScore() {
+        questionsContainer.classList.toggle("hide");
+        scoreCounter.classList.toggle("hide");
+        resetButton.classList.toggle("hide");
+        
+        if (userScore < 2) {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            better luck next time!`
+        } else if (userScore < 5) {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            could you do better?`
+        } else {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            Great job!`
+        }
+        
+        message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10`
+
+        document.getElementById("question").innerText = message;
+    }
 });
