@@ -57,14 +57,87 @@ const questionsArray = [
                 options: ["Daphne du Maurier", "Rosamunde Pilcher", "Helen Dunmore"],
                 answer: 0,
             },
+
             {
                 // Question 10
                 question: "What is the name of the River that flows through Truro, Cornwall?",
                 options: ["Fowey River", "Tamar River", "Kenwyn River"],
-                answer: 2,
-            }
+                answer: 2
+            },
+
+            {
+                //Question 11
+                question: "What is the Cornish name for Cornwall?",
+                options: ["Cernow", "Kernow","Kernev"],
+                answer: 2
+            },
+
+            {
+                //Question 12
+                question: "Which famous Cornish food is protected by EU law?",
+                options: ["Cornish Pasty", "Cornish Cream Tea", "Cornish Fudge"]
+                answer: 0
+            },
+
+            {
+                //Question 13
+                question: "Which historical industry was a major part of Cornwall’s economy?"
+                options: ["Tin Mining", "Shipbuilding", "Textile Manufacturing"]
+                answer: 0
+            },
+
+            {
+                //Question 14
+                question: "What is the name of the Cornish flag?"
+                options: ["Flag of St. David", "Flag of St. George", "Flag of St. Piran"]
+                answer: 3
+            },
+
+            {
+                //Question 15
+                question: "Which Cornish location is known as the most westerly point of mainland England?"
+                options: ["Cape Cornwall", "Land’s End", "Lizard Point"]
+                answer: 1
+            },
+
+            {
+                //Question 16
+                question: "What is Cornwall's traditional language called?"
+                options: ["Cape Cornwall", "Land’s End", "Lizard Point"]
+                answer: 1
+            },
+
+            {
+                //Question 17
+                question: "Which Cornish attraction features a cliffside theatre?"
+                options: ["Minack Theatre", "Theatre Royal", "Porthcurno Theatre"]
+                answer: 0
+            },
+
+            {
+                //Question 18
+                question: "Which small Cornish town is famous for its fishing and art communities?"
+                options: ["Padstow", "Fowey", "St Ives"]
+                answer: 2
+            },
+
+            {
+                //Question 19
+                question: "Which Cornish town is home to a famous annual oyster festival?"
+                options: ["Falmouth", "Penzance", "St Austell"]
+                answer: 0
+            },
+
+            {
+                //Question 20
+                question: "What is the name of the Cornish mythological figure associated with King Arthur?"
+                options: ["Tristan", "Uther Pendragon", "Merlin"]
+                answer: 2
+            },
+
         ]
     },
+>>>>>>> main
     {
         // Topic
         topic: "Pop-music trivia",
