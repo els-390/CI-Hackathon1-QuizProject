@@ -148,6 +148,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function announceScore() {
+        const announce = (message) => {
+            document.getElementById("question").innerText = message;
+        }
+        
         answerButtons.classList.toggle("hide");
         scoreCounter.classList.toggle("hide");
         resetButton.classList.toggle("hide");
@@ -165,9 +169,5 @@ document.addEventListener("DOMContentLoaded", () => {
             Great job!`
             announce(message);
         }
-    }
-
-    function announce(message) {
-        document.getElementById("question").innerText = message;
     }
 });
