@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const questionsContainer = document.getElementById("questions-container");
     // const topic = questionsArray[0].questions;
     let topic = "Cornwall";
-    //change shuffledQuestions to a function later
+
     let questionSet = shuffledQuestions(topic);
+    console.log("original order", questionsArray[0].questions)
+    console.log("shuffled questions", questionSet);
     // let shuffledQuestions = topic;
     let currentQuestionIndex = 0;
     let answerButtons = document.getElementById("answers-container");
@@ -81,55 +83,40 @@ document.addEventListener("DOMContentLoaded", () => {
         //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
             questionsContainer.style.backgroundColor = "green";
-            // swal({
-            //     title: "Good job!",
-            //     text: "You got the right answer!",
-            //     icon: "success",
-            //     button: document.getElementById("next"),
-            // });
             userScore++;
         } else {
             questionsContainer.style.backgroundColor = "red";
-            // swal({
-            //     title: "Good try! but...",
-            //     text: "You got the wrong answer!",
-            //     icon: "warning",
-            //     button: document.getElementById("next"),
-            // });
         }
         
         for (let button of answerButtons.children) {
             button.disabled = true;
         }
 
-        nextButton.classList.toggle("hide");
+        if (currentQuestionIndex + 1 < questionSet.length) {
+            nextButton.classList.toggle("hide"); //reveals next button
+        } else {
+            finishedQuizScene();
+        }
+
     }
 
 
     //Luke
     //marker 5
     function onNextButton() {
-        nextButton.classList.toggle("hide");
+        nextButton.classList.toggle("hide");  //hides next button
 
         questionsContainer.style.backgroundColor = "";
-        
-        currentQuestionIndex++;
 
-        if (currentQuestionIndex < questionSet.length) {
-            removeLastQuestion();
-        } else if (currentQuestionIndex === questionSet.length) {
-            // finishedQuizScene();
-            console.log("create finished quiz scene function");
-            finishedQuizScene();
-        } else {
-            console.log("Luke messed this if up");
-        }
+        currentQuestionIndex++;
+        removeLastQuestion();
         }
     
     // //marker 6
     // finishedQuizScene()
     // needs more than this, will add on Thursday, but needed boilerplate for now.
     function finishedQuizScene () {
+
         resetButton.classList.toggle("hide");
     }
 
