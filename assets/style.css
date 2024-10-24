@@ -1,3 +1,6 @@
+/* ----------GOOGLE FONTS---------- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* ----------CSS RESET---------- */
 
 * {
@@ -5,6 +8,7 @@
     margin: 0;
     padding: 5px;
     font-family: Lato, sans-serif;
+
 }
 
 /*-------------BODY-------------------*/
@@ -17,7 +21,7 @@ body {
 /* ------------CONTAINER------------ */
 .center {
     margin: auto;
-    text-align: center;    
+    text-align: center;
 }
 
 /* flex and relevant flex settings */
@@ -25,7 +29,8 @@ body {
 .flex {
     display: flex;
     justify-content: center;
-    align-items: center;        /* <--potential redundant */
+    align-items: center;
+    /* <--potential redundant */
 }
 
 .spread-itms {
@@ -51,8 +56,9 @@ body {
     border-radius: 5px;
     /* cursor:pointer; */
 }
+
 .btn:hover {
-    background-color: rgb(0,0,0,.5);
+    background-color: rgb(0, 0, 0, .5);
 }
 
 .start-btn {
@@ -62,16 +68,30 @@ body {
     border: none;
     border-radius: 5px;
 }
+
 .start-btn:hover {
-    background-color: pink;
+    background-color: #f9bc3f;
+    color: #113850;
 }
 
 /* ------------CONTENT------------ */
 
 /* by element tags */
-/* h1 {
-    text-align: center;
-} */
+h1 {
+    /* text-align: center; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f9bc3f;
+    text-shadow: 1px 1px 2px #113850, 0 0 1em #113850, 0 0 0.2em rgb(54, 54, 128);
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    color: #113850;
+
+}
 
 /* by Id Name */
 #question {
@@ -85,9 +105,10 @@ body {
     cursor: pointer;
     margin: 5px;
 }
+
 .selected {
-    border: 2px solid blue;
-  }
+    border: 5px solid #f9bc3f;
+}
 
 /* by class */
 
@@ -96,6 +117,9 @@ body {
 .white-black {
     color: white;
     background-color: black;
+    white-space: nowrap;
+    width: 200px;
+    margin: 10px;
 }
 
 .background-skin {
@@ -105,3 +129,21 @@ body {
 .hide {
     display: none;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #question {
+        font-size: 18px;Í
+    }
+    
+    #answers-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* Make buttons full width */
+        margin: 5px 0;
+        /* Adjust margins for vertical stacking */
+    }
