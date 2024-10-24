@@ -4,14 +4,13 @@
 
 <h2>Introduction</h2>
 
-**Kernow Know-How** by Kernow Coders is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
+**Kernow Know-How** by Kernow Coders is an online quiz designed to allow users to test and enhance their knowledge of Cornwall.
 
 Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children, for example when doing a school project. The quiz will provide 10 questions selected randomly from a bank of suitable material.
 
-Future additions will enable the user to test and enhance their knowledge on a wide variety of topics after they have completed the Cornish section of the quiz as well as allowing them to enter their details to save their progress. 
+Future additions will enable the user to test and enhance their knowledge on a wide variety of topics after they have completed the Cornish section of the quiz as well as allowing them to enter their details to save their progress.
 
-
-## Main Page 
+## Main Page
 
 The user is greeted with a beautiful image of a Cornish beach to tie in with the theme of the quiz.
 
@@ -26,8 +25,8 @@ A simple but effective start button is present so that the user knows immediatel
 <br>
 
 <strong>Quiz view.</strong>
- 
- Once the start button is clicked the questions are displayed with a choice of 3 possible answers.
+
+Once the start button is clicked the questions are displayed with a choice of 3 possible answers.
 
 <img src="assets/images/responsiveness/quizview-all-devices.webp" alt="Quiz view on all devices">
 
@@ -51,7 +50,7 @@ If the answer selected by the user is wrong the button will turn red and the sco
 
 <strong>The end of the quiz.</strong>
 
-At the end of the quiz the score is displayed along with a message that depends on that score. A reset button will also appear fothe user to play again. 
+At the end of the quiz the score is displayed along with a message that depends on that score. A reset button will also appear fothe user to play again.
 
 <img src="assets/images/responsiveness/endquiz.JPG" alt="End of quiz display">
 
@@ -63,55 +62,43 @@ In order to provide a better user experience on a smaller screen the answer butt
 
 <img src="assets/images/responsiveness/small-screen-quiz.JPG" alt="Shows the quiz working with buttons in a column on a small screen">
 
- ## Quiz page
+## Quiz page
 
- The quiz page presents questions and possible answers, with buttons clearly delineated against their background. 
- 
- There is clear feedback when a user selects and then commits an answer. 
- 
- It lets you know the correct answer if you were wrong. There is also an updating score display. 
-
- There is a restart button in case the user decides they want to start again. 
+We have chosen a fun trivia quiz based on Cornish general knowledge.
 
 <strong>In-quiz page across multiple devices</strong>
 
-<img src="assets/images/readMeImages/amiresponsive/quiz-page.png" alt="Quiz page across different devices">
+<img src="assets/images/Readme/front screen.png" alt="Starting Quiz page across different devices">
 
 <strong>Mid-quiz page showing answer committed and feedback provided</strong>
 
-<img src="assets/images/readMeImages/quizpage/quizpage2.png" alt="Quiz being played">
+<img src="assets/images/Readme/Quiz page.png" alt="Quiz being played">
 
 <strong>Quiz complete screen</strong>
 
-<img src="assets/images/readMeImages/quizpage/quizcomplete.png" alt="Quiz complete page">
+<img src="assets/images/Readme/End screen.png" alt="Quiz complete page">
 
 ## Design Choices
 
-We selected a rich and colourful style, using bright high contrast colours. We want the user to feel immersed in the experience of visiting our website. We derived our colours from https://visme.co/blog/website-color-schemes/
-“Bright Accent Colors”
-#242582
-#553D67
-#F64C72
-#99738E
-#2F2FA2
+For our project, we chose a colour palette inspired by a beautiful Cornish beach. We opted for blue and yellow as the primary colours. The blue represents the rolling waves of the sea, while the yellow reflects the Cornish sand. The golden yellow also features in the Cornish logo.
 
-We selected the font style Poppins 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'. It works well as a fun, slightly futuristic, slightly unusual font; but not unusual enough to overpower the rest of the page.
+<img src="assets/images/Readme/Mood Board.png" alt="Mood board for quiz">
 
 ## Wire Frames
 
+We have included the wireframes for each stage of the user journey, including the initial page, the quiz page, and the final page.
 
-<strong>Landing page for First Time User followed by Options Pages for repeat users<br></strong>
+<strong>Wireframe for web browser. <br></strong>
 
+<img src="assets/images/wireframes/Web browser.png" alt="Wireframe images for web browser">
 
+<strong>Wireframe for tablet. <br></strong>
 
+<img src="assets/images/wireframes/Tablet.png" alt="Wireframe images for Tablet">
 
-<img src="assets/images/readMeImages/wireframes/wflandingpagefinal2.png" alt="Wireframe image of Insert name and Options page">
+<strong>Wireframe for mobile. <br></strong>
 
-## Quiz page
-
-We ensured that we provided wireframes to cover all the different stages of user experience and features
-
-<img src="assets/images/readMeImages/wireframes/wfquizfinal2.png" alt="Wireframe image of In-Quiz page">
+<img src="assets/images/wireframes/Mobile.png" alt="Wireframe images for mobile">
 
 ## User Stories, features and bugs
 
@@ -194,12 +181,9 @@ We ensured that we provided wireframes to cover all the different stages of user
 
 <br>
 
-
 <br>
 
-
-### User Stories and Features (to be implelemented next Sprint) 
-
+### User Stories and Features (to be implelemented next Sprint)
 
   <table>
   <tr>
@@ -208,14 +192,13 @@ We ensured that we provided wireframes to cover all the different stages of user
     <th>Bugs / Issues</th>
   </tr>
 
-
-
   <tr>
-    <td>As a user I want to be able to store my highest score to see if I can beat it on my future visits.</td>
+    <td>As a user, I want to be able to view my previous scores and see my personal best.</td>
     <td>Highest score from previous use visible (cookies required)</td>
     <td>N/A</td>
   </tr>
-  
+  </tr>
+
 
   </table>
 
@@ -228,87 +211,71 @@ We ensured that we provided wireframes to cover all the different stages of user
     <th>Bugs / Issues</th>
   </tr>
   <tr>
-    <td>As a user, I want to have a countdown timer to challenge myself to answer more quickly.</td>
-    <td>A countdown timer to display either how long I have left to answer the question before it assigns to wrong</td>
+    <td>As a Cornish user, I would like to take the Cornwall quiz in Cornish.</td>
+    <td>A translation toggle where the user can switch between Cornish text and English.</td>
     <td>N/A</td>
   </tr>
     
- 
-  <td>As a site-owner I want to have a questions backup in case the API  stops working.</td>
-    <td>A secondary API or source of questions in case the first API breaks down</td>
+ <tr>
+    <td>As a user, I would like to be able to share my score with others.</td>
+    <td>Social media links are displayed upon the completion of the quiz.</td>
+    <td>N/A</td>
+  </tr>
+
+  <tr>
+    <td>As a user, I would like the game to display my name when I'm playing.</td>
+    <td>Input name box would take the users name at the start, then have a customised user greeting message.</td>
+    <td>N/A</td>
+  </tr>
+    <tr>
+    <td>As a user I want to link with my friends and compare scores.</td>
+    <td>Highest score which links to other users with log in details.</td>
     <td>N/A</td>
   </table>
 
 ## Fixed Bugs / Issues
+
 <br>
 <table>
   <tr>
     <th>Bug/Issue</th>
-    <th>Image</th>
     <th>Resolution</th>
   </tr>
-  <td>"Select type" option overflows to below options box on smaller devices</td>
-    <td><img src="assets/images/readMeImages/bugs/fixed/questionsoverflow.png" alt="Image showing box obscuring the logo on larger devices"></td>
-    
-  <td>We added media queries to ensure effective responsiveness</td>
+  <td>The Reset button would not appear after the last question.</td>
+     
+  <td>We moved the function to an earlier point in the call list to ensure this function was called first. </td>
   </tr>
       
   </tr>
-    <td>Quiz-E would display without questions and just show questions marks when user left all questions to default(i.e.Any).</td>
-   <td><img src="assets/images/readMeImages/bugs/fixed/questionsdontshow.png" alt="Quiz page showing selected option and timer displaying 2 seconds elapsed"></td>
-   <td>We required the user to enter Questions Length, and API call modified to accommodate this by leaving the “any” option off the API call.</td>
+    <td>The answer buttons would not shrink to fit on mobile screen</td>
+    <td>We added media queries to aid responsiveness</td>
   </tr>
       
   </tr>
-    <td>Sometimes after answering several questions the questions would stop changing</td>
-   <td><img src="assets/images/readMeImages/bugs/delay.png" alt="Quiz page showing selected option and timer displaying 2 seconds elapsed"></td>
-    
-  <td>The problem lay was that when too many requests were made from the API in too small a space of time. Therefore to fix this we implemented a required delay of three seconds between committing answers</td>
+    <td>The answer buttons were appearing on the end message when the media query was hit for small devices.</td>   
+    <td>Issue was caused by the query applying display flex to the answers container, and overriding the display none value. This was fixed by creating a function that hides each answer button element individually.</td>
+  </tr>
+
+  <tr>
+    <td>The questions were not shuffling properly from the original array.</td>
+    <td>The issue was that the return of the shuffle function was not returning the correct values. This was fixed by correcting an issue in the arrow function used to assign the random number to the sort method.</td>
   </tr>
   </table>
 
 ## Unfixed Bugs / Issues
+
 <br>
 <table>
   <tr>
     <th>Bug/Issue</th>
-    <th>Image</th>
     <th>Resolution</th>
   </tr>
-  <td>On large devices the "Enter name" box obscures the brand logo and feels like a pop-up rather than an integrated element of the UX package</td>
-    <td><img src="assets/images/readMeImages/amiresponsive/loginscreenpng.png" alt="Image showing box obscuring the logo on larger devices"></td>
-    
-  <td>Unfortunately we ran out of time to fix this. We would in future sprints change from an in-browser alert box to a html modal box, that would be styled and centred on the screen etc as part of a user management system.</td>
-  </tr>
-      
-  </tr>
-    <td>Sometimes quiz repeats questions, or includes them from higher difficulties. As an example of both, this question came up twice in a quiz set to easy.</td>
-    <td><img src="assets/images/readMeImages/bugs/repeatdifficultforbugpage.png" alt="Image showing difficult question"></td>
-    
-  <td>Unfortunately none available as source of questions is the API. The only fix would have been to change the API from a paid provider but this would be costly and we would have had to change too much code by the time we realised</td>
-  </tr>
-    
-  </tr>
-  <td>Three second delay between answer and next question</td>
-    <td><img src="assets/images/readMeImages/bugs/delay.png" alt="Quiz page showing selected option and timer displaying 2 seconds elapsed"></td>
-    <td>The delay was a fix to a bug of the site crashing when too many requests were made from the API in too small a space of time(see "Fixed Bugs" above). The only fix would have been to change the API from a paid provider but this would be costly and we would have had to change too much code by the time we realised</td>
-      <tr>
-      <td>Only a share to FB button, no instagram or X buttons</td>
-      <br>
-    <td><img src="assets/images/readMeImages/bugs/socialmedia.png" alt="Social media button of Facebook, but not any other social media"></td>
-    <td><br><br<br>Ran out of time to add this sprint, but definitely would be added Instagram and X buttons on a future sprint<br><br></td>
-  </tr>
-  <tr>
-      <td>Spelling errors on website </td>
-    <td><img src="assets/images/readMeImages/bugs/spelling.png" alt="Question with a spelling error on it"></td>
-    <td>Unfortunately none available as source of questions is the API. The only fix would have been to change the API from a paid provider.</td>
-    
-    
-  <table>
-  
-  </tr>
 
-  </table>
+ <tr>
+  <td>If a user gets 10 question wrong in a row, then the statement applying hide to the score counter suddenly appears as 0 when the results message is given.</td>
+  <td>We ran out of time to fix this, but it would be a simple matter of adding a statement to alter the class only if it is already in a specific state.</td>
+ </tr>
+<table>
 
 ### Tools and Technologies Used
 
@@ -318,17 +285,13 @@ We ensured that we provided wireframes to cover all the different stages of user
 
 - Javascript
 
-- [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-
 - Gitpod - Code Institue cloud IDE
-
-//- [Font Awesome](fontawesome.com)
 
 - [Google Fonts](fonts.google.com)
 
 - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhg)
 
-- [Unsplash](unsplash.com)
+- [Pexels](https://www.pexels.com/photo/rocky-seashore-landscape-at-carnewas-bedruthan-england-18810828/)
 
 - [Tinypng.com](Tinypng.com)
 
@@ -343,49 +306,40 @@ We ensured that we provided wireframes to cover all the different stages of user
 - Utilised Google Gemini, Claude, Perplexity and Chat GPT AI tools to research names for the website
 - Used Chat GPT to generate website logo
 
-### Validator Testing 
+### Validator Testing
 
 For HTML validation https://validator.w3.org/
 
 One issue detected and fixed.
 
-<img src="assets/logos/KernowKnowHowLogoColor.webp" alt="html validation screenshot">
+<img src="assets/images/validator html.png" alt="html validation screenshot">
 
-For CSS validation  https://jigsaw.w3.org/css-validator/
+For CSS validation https://jigsaw.w3.org/css-validator/
 
-<img src="assets/images/readMeImages/css-validation.png" alt="css validation screenshot">
+One typo detected and fixed. 
+
+<img src="assets/images/validator css.png" alt="css validation screenshot">
   
+## Deployment
 
-//## Deployment
+Site successfully deployed [here.](https://els-390.github.io/CI-Hackathon1-QuizProject/)
 
-//Site successfully deployed on https://kjwhitehead.github.io/quizzee_rascals/
+## Credits
 
-//## Credits 
+### Content
 
-//Color Scheme: “Bright Accent Colors” https://visme.co/blog/website-color-schemes/
+Inspiration for quiz style and layout https://github.com/WebDevSimplified/JavaScript-Quiz-App 
 
-//### Content 
+Responsiveness displayed on https://ui.dev/amiresponsive
 
-//Timer used to display delay issue https://www.online-stopwatch.com/
+For validation in HTML https://validator.w3.org/
 
-//Responsiveness displayed on https://ui.dev/amiresponsive
-
-//API Questions taken from https://opentdb.com/
-
-//Code initially inspired by and re-written https://opentdb.com/
-
-//For validation in HTML https://validator.w3.org/
-
-//For validation in CSS https://jigsaw.w3.org/css-validator/
+For validation in CSS https://jigsaw.w3.org/css-validator/
 
 For ReadME table https://www.shecodes.io/athena/2362-creating-a-table-with-4-columns-and-4-rows-in-html
 
 Wireframes produced using Balsamiq WireFrames https://balsamiq.com/wireframes/?gad_source=1&gclid=CjwKCAiA44OtBhAOEiwAj4gpOexFh0z3peWS6wolbjlJt_fLq7cZGNu99YeMSIpU89wlL2p6ZluXiRoCOSUQAvD_BwE
 
-Timer used to display delay issue https://www.online-stopwatch.com/
+## Other General Project Advice
 
-
-//## Other General Project Advice
-
-//Enjoy the Quiz!
-
+Enjoy the Quiz!
