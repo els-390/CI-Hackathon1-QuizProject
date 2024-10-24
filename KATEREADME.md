@@ -4,46 +4,61 @@
 
 <h2>Introduction</h2>
 
-Kernow Know-How by **Kernow Coders** is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
+**Kernow Know-How** by Kernow Coders is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
 
-Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children for example when doing a school project.
+Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children, for example when doing a school project. The quiz will provide 10 questions selected randomly from a bank of suitable material.
 
-Future additions will enable the user to test and enhance their knowledge on a wide variety of topics after they have completed the Cornish Section as well as allowing them to enter their details to save their progress.
+Future additions will enable the user to test and enhance their knowledge on a wide variety of topics after they have completed the Cornish section of the quiz as well as allowing them to enter their details to save their progress. 
 
 
 ## Main Page 
 
-The user is greeted on the landing page with a beautiful image of a Cornish beach to tie in with the theme of the quiz.
+The user is greeted with a beautiful image of a Cornish beach to tie in with the theme of the quiz.
 
-It displays the kernow Know-How brand logo clearly for brand recognition. Future features will provide the option to share the page and the user's scores with friends and family on social media.
-
-<strong>Main page across multiple devices</strong>
+It displays the Kernow Know-How brand logo clearly for brand recognition. Future features will provide the option to share the page and the user's scores with friends and family on social media.
 
 A simple but effective start button is present so that the user knows immediately how to begin the game.
+
+<strong>Main page across multiple devices.</strong>
 
 <img src="assets/images/responsiveness/main-all-screens.webp" alt="Main page across different devices">
 
 <br>
 
-<strong>Quiz View</strong>
+<strong>Quiz view.</strong>
  
+ Once the start button is clicked the questions are displayed with a choice of 3 possible answers.
 
 <img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view on all devices">
 
 <br>
 
-<strong>Quiz View With Counter</strong>
+<strong>Quiz view showing a selected correct answer and the score counter.</strong>
 
-<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view showing the counter">
+While the game is being played the user can choose an answer by clicking the relevant button. If the answer is correct the button will turn green and the score will increment by 1.
 
-<br>
-
-<strong>The End of The Line</strong>
-
-<img src="assets/images/responsiveness/main-all-screens.webp" alt="End of quiz display>
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view showing selected correct answer and the score counter">
 
 <br>
 
-<strong>Quiz type difficulty menu</strong>
+<strong>Quiz view showing a selected wrong answer and the score counter.</strong>
 
-<img src="assets/images/readMeImages/options/type.png" alt="Options page showing dropdown menu with different quiz type i.e. multiple choice or true or false">
+If the answer selected by the user is wrong the button will turn red and the score will not change.
+
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view showing selected correct answer and the score counter">
+
+<br>
+
+<strong>The end of the quiz.</strong>
+
+At the end of the quiz the score is displayed along with a message that depends on that score. A reset button will also appear fothe user to play again.
+
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="End of quiz display">
+
+<br>
+
+<strong>Quiz view on a small screen.</strong>
+
+In order to provide a better user experience on a smaller screen the answer buttons appear in a column.
+
+<img src="assets/images/responsiveness/seagull.webp" alt="Shows the quiz working with buttons in a column on a small screen">
