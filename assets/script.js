@@ -97,11 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     
         nextButton.classList.toggle("hide"); //reveals next button
-        // if (currentQuestionIndex < 10) {
-        // }
-        // else {
-        //     finishedQuizScene();
-        // }
     }
 
 
@@ -130,8 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function resetVars() {
         resetButton.classList.toggle("hide");
+        scoreCounter.classList.add("hide");
+        answerButtons.classList.toggle("hide");
 
         userScore = 0;
+        scoreCounter.innerText = "";
+
         currentQuestionIndex = 0;
         // Insert way to change topic selected??
         questionSet = shuffledQuestions(topic);
@@ -151,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const announce = (message) => {
             document.getElementById("question").innerText = message;
         }
-        
+
         answerButtons.classList.toggle("hide");
         scoreCounter.classList.toggle("hide");
         resetButton.classList.toggle("hide");
