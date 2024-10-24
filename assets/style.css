@@ -136,7 +136,7 @@ p {
     }
 
     #question {
-        font-size: 18px;Í
+        font-size: 18px;
     }
     
     #answers-container {
@@ -147,3 +147,5 @@ p {
         margin: 5px 0;
         /* Adjust margins for vertical stacking */
     }
+
+}
