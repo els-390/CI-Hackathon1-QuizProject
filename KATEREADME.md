@@ -4,56 +4,61 @@
 
 <h2>Introduction</h2>
 
-Kernow Know-How by **TEAM NAME** is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
+**Kernow Know-How** by Kernow Coders is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
 
-Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children for example when doing a school project.
+Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children, for example when doing a school project. The quiz will provide 10 questions selected randomly from a bank of suitable material.
 
-~~It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.~~
-
-## Landing page for first time users
-
-The landing page allows users to provide their name so that they are greeted by name on return visits to personalise and improve user engagement.
-
-<strong>Landing page for first time users</strong>
-
-<img src="assets/images/readMeImages/amiresponsive/loginscreenpng.png" alt="Options page across different devices">
+Future additions will enable the user to test and enhance their knowledge on a wide variety of topics after they have completed the Cornish section of the quiz as well as allowing them to enter their details to save their progress. 
 
 
+## Main Page 
 
-## Options page (landing page for returning users) 
+The user is greeted with a beautiful image of a Cornish beach to tie in with the theme of the quiz.
 
-The Options page allows users to provide their name so that they are greeted by name on return visits. 
+It displays the Kernow Know-How brand logo clearly for brand recognition. Future features will provide the option to share the page and the user's scores with friends and family on social media.
 
-There are drop menus to adjust difficulty, category, how many questions, and question type. There is also a social media button to easily share Quiz-E. 
+A simple but effective start button is present so that the user knows immediately how to begin the game.
 
-It displays the Quizzee Rascals brand logo clearly for brand recognition. It also provides the option to share Quiz-E with friends and family on social media.
+<strong>Main page across multiple devices.</strong>
 
-<strong>Options page across multiple devices</strong>
-
-
-<img src="assets/images/readMeImages/amiresponsive/welcomeback.png" alt="Options page across different devices">
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="Main page across different devices">
 
 <br>
 
-<strong>Quiz length dropdown menu</strong>
+<strong>Quiz view.</strong>
  
+ Once the start button is clicked the questions are displayed with a choice of 3 possible answers.
 
-<img src="assets/images/readMeImages/options/questions.png" alt="Options page showing dropdown menu with different quiz lengths">
-
-<br>
-
-<strong>Quiz subject dropup menu</strong>
-
-<img src="assets/images/readMeImages/options/category.png" alt="Options page showing dropdown menu with different categories">
+<img src="assets/images/responsiveness/scones.webp" alt="Quiz view on all devices">
 
 <br>
 
-<strong>Quiz subject difficulty menu</strong>
+<strong>Quiz view showing a selected correct answer and the score counter.</strong>
 
-<img src="assets/images/readMeImages/options/difficulty.png" alt="Options page showing dropdown menu with different quiz difficulties">
+While the game is being played the user can choose an answer by clicking the relevant button. If the answer is correct the button will turn green and the score will increment by 1.
+
+<img src="assets/images/responsiveness/pirate.webp" alt="Quiz view showing selected correct answer and the score counter">
 
 <br>
 
-<strong>Quiz type difficulty menu</strong>
+<strong>Quiz view showing a selected wrong answer and the score counter.</strong>
 
-<img src="assets/images/readMeImages/options/type.png" alt="Options page showing dropdown menu with different quiz type i.e. multiple choice or true or false">
+If the answer selected by the user is wrong the button will turn red and the score will not change.
+
+<img src="assets/images/responsiveness/surfer.webp" alt="Quiz view showing selected correct answer and the score counter">
+
+<br>
+
+<strong>The end of the quiz.</strong>
+
+At the end of the quiz the score is displayed along with a message that depends on that score. A reset button will also appear fothe user to play again.
+
+<img src="assets/images/responsiveness/pasty.webp" alt="End of quiz display">
+
+<br>
+
+<strong>Quiz view on a small screen.</strong>
+
+In order to provide a better user experience on a smaller screen the answer buttons appear in a column.
+
+<img src="assets/images/responsiveness/seagull.webp" alt="Shows the quiz working with buttons in a column on a small screen">
