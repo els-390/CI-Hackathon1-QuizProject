@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const startButton = document.getElementById("start");
     const nextButton = document.getElementById("next");
     const resetButton = document.getElementById("reset");
+    const scoreCounter = document.getElementById("score");
 
     const questionsContainer = document.getElementById("questions-container");
     const answerContainer = document.getElementById("answers-container");
@@ -84,8 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
         //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
             selectedButton.style.backgroundColor = "green";
+            if (!userScore) {
+                scoreCounter.classList.toggle("hide");
+            }
             userScore++;
-            document.getElementById("score").innerText = userScore;
+            textScore = `Correct answers: ${userScore} out of ${10}`;
+            document.getElementById("score").innerText = textScore;
         } else {
             selectedButton.style.backgroundColor = "red";
         }
@@ -94,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.disabled = true;
         }
 
-        if (currentQuestionIndex + 1 < questionSet.length) {
+        if (currentQuestionIndex + 1 < 10) {
             nextButton.classList.toggle("hide"); //reveals next button
         } else {
             finishedQuizScene();
@@ -129,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentQuestionIndex = 0;
         // Insert way to change topic selected??
         questionSet = shuffledQuestions(topic);
+        scoreCounter.classList.toggle("hide");
         removeLastQuestion();
     }
 
