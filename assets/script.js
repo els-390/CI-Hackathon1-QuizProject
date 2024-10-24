@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
         //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
             questionsContainer.style.backgroundColor = "green";
-            document.getElementById("score").innerText = userScore;
             userScore++;
+            document.getElementById("score").innerText = userScore;
         } else {
             questionsContainer.style.backgroundColor = "red";
         }
