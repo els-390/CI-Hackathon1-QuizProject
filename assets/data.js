@@ -61,7 +61,7 @@ const questionsArray = [
                 // Question 10
                 question: "What is the name of the River that flows through Truro, Cornwall?",
                 options: ["Fowey River", "Tamar River", "Kenwyn River"],
-                answer: 2
+                answer: 2,
             }
         ]
     },
