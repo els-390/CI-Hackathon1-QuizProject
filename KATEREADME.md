@@ -4,53 +4,43 @@
 
 <h2>Introduction</h2>
 
-Kernow Know-How by **TEAM NAME** is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
+Kernow Know-How by **Kernow Coders** is an online quiz designed to allow users to test and enhance their knowledge of Cornwall. 
 
 Suitable for a broad target audience from age 12 upwards, the is resource could also be used by older primary school aged children for example when doing a school project.
 
-~~It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.~~
-
-## Landing page for first time users
-
-The landing page allows users to provide their name so that they are greeted by name on return visits to personalise and improve user engagement.
-
-<strong>Landing page for first time users</strong>
-
-<img src="assets/images/readMeImages/amiresponsive/loginscreenpng.png" alt="Options page across different devices">
+Future additions will enable the user to test and enhance their knowledge on a wide variety of topics after they have completed the Cornish Section as well as allowing them to enter their details to save their progress.
 
 
+## Main Page 
 
-## Options page (landing page for returning users) 
+The user is greeted on the landing page with a beautiful image of a Cornish beach to tie in with the theme of the quiz.
 
-The Options page allows users to provide their name so that they are greeted by name on return visits. 
+It displays the kernow Know-How brand logo clearly for brand recognition. Future features will provide the option to share the page and the user's scores with friends and family on social media.
 
-There are drop menus to adjust difficulty, category, how many questions, and question type. There is also a social media button to easily share Quiz-E. 
+<strong>Main page across multiple devices</strong>
 
-It displays the Quizzee Rascals brand logo clearly for brand recognition. It also provides the option to share Quiz-E with friends and family on social media.
+A simple but effective start button is present so that the user knows immediately how to begin the game.
 
-<strong>Options page across multiple devices</strong>
-
-
-<img src="assets/images/readMeImages/amiresponsive/welcomeback.png" alt="Options page across different devices">
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="Main page across different devices">
 
 <br>
 
-<strong>Quiz length dropdown menu</strong>
+<strong>Quiz View</strong>
  
 
-<img src="assets/images/readMeImages/options/questions.png" alt="Options page showing dropdown menu with different quiz lengths">
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view on all devices">
 
 <br>
 
-<strong>Quiz subject dropup menu</strong>
+<strong>Quiz View With Counter</strong>
 
-<img src="assets/images/readMeImages/options/category.png" alt="Options page showing dropdown menu with different categories">
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view showing the counter">
 
 <br>
 
-<strong>Quiz subject difficulty menu</strong>
+<strong>The End of The Line</strong>
 
-<img src="assets/images/readMeImages/options/difficulty.png" alt="Options page showing dropdown menu with different quiz difficulties">
+<img src="assets/images/responsiveness/main-all-screens.webp" alt="End of quiz display>
 
 <br>
 
