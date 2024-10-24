@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    //Luke
+    //Luke Isotta
     //marker 5
     function onNextButton() {
         nextButton.classList.toggle("hide");  //hides next button
