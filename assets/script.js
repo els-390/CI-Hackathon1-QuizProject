@@ -105,8 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function onNextButton() {
         nextButton.classList.toggle("hide");  //hides next button
     
-        // questionsContainer.style.backgroundColor = "";
-    
         currentQuestionIndex++;
     
         if (currentQuestionIndex != 10) {
