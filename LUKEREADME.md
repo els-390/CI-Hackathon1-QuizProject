@@ -11,9 +11,10 @@
 
 
   <tr>
-    <td></td>
+    <td>As a user I want to be able to veiw my previous scores and see my personal best.</td>
     <td>Highest score from previous use visible (cookies required)</td>
     <td>N/A</td>
+  </tr>
   </tr>
   
 
@@ -44,6 +45,10 @@
     <td>Input name box would take the users name at the start, then have a customised user greeting message.</td>
     <td>N/A</td>
   </tr>
+    <tr>
+    <td>As a user I want to link with my friends and compare scores.</td>
+    <td>Highest score which links to other users with log in details.</td>
+    <td>N/A</td>
   </table>
 
 ## Fixed Bugs / Issues
@@ -51,26 +56,22 @@
 <table>
   <tr>
     <th>Bug/Issue</th>
-    <th>Image</th>
     <th>Resolution</th>
   </tr>
-  <td>"Select type" option overflows to below options box on smaller devices</td>
-    <td><img src="assets/images/readMeImages/bugs/fixed/questionsoverflow.png" alt="Image showing box obscuring the logo on larger devices"></td>
-    
-  <td>We added media queries to ensure effective responsiveness</td>
+  <td>The Reset button would not apear after last question</td>
+     
+  <td>We moved the function into an earlier point in the call list to unsure we called this function first. </td>
   </tr>
       
   </tr>
-    <td>Quiz-E would display without questions and just show questions marks when user left all questions to default(i.e.Any).</td>
-   <td><img src="assets/images/readMeImages/bugs/fixed/questionsdontshow.png" alt="Quiz page showing selected option and timer displaying 2 seconds elapsed"></td>
-   <td>We required the user to enter Questions Length, and API call modified to accommodate this by leaving the “any” option off the API call.</td>
+    <td>The answer buttons would not shrink to fit on mobile screen</td>
+  <td>We added media quieries to aid the responsivness</td>
   </tr>
       
   </tr>
-    <td>Sometimes after answering several questions the questions would stop changing</td>
-   <td><img src="assets/images/readMeImages/bugs/delay.png" alt="Quiz page showing selected option and timer displaying 2 seconds elapsed"></td>
-    
-  <td>The problem lay was that when too many requests were made from the API in too small a space of time. Therefore to fix this we implemented a required delay of three seconds between committing answers</td>
+    <td>1</td>
+       
+  <td>1</td>
   </tr>
   </table>
 

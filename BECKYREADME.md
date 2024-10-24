@@ -1,12 +1,6 @@
 ## Quiz page
 
- The quiz page presents questions and possible answers, with buttons clearly delineated against their background. 
- 
- There is clear feedback when a user selects and then commits an answer. 
- 
- It lets you know the correct answer if you were wrong. There is also an updating score display. 
-
- There is a restart button in case the user decides they want to start again. 
+We have chosen a fun trivia quiz based on Cornish general knowledge. 
 
 <strong>In-quiz page across multiple devices</strong>
 
@@ -22,15 +16,9 @@
 
 ## Design Choices
 
-We selected a rich and colourful style, using bright high contrast colours. We want the user to feel immersed in the experience of visiting our website. We derived our colours from https://visme.co/blog/website-color-schemes/
-“Bright Accent Colors”
-#242582
-#553D67
-#F64C72
-#99738E
-#2F2FA2
+For our project, we chose a color palette inspired by a beautiful Cornish beach. We opted for blue and yellow as the primary colors, the blue represents the rolling waves of the sea, while the yellow reflects the cornish sand. The golden yellow also features in the Cornish logo.
 
-We selected the font style Poppins 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'. It works well as a fun, slightly futuristic, slightly unusual font; but not unusual enough to overpower the rest of the page.
+<img src="assets/images/Readme/Mood Board.png" alt="Mood board for quiz">
 
 ## Wire Frames
 
