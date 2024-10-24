@@ -29,7 +29,7 @@ A simple but effective start button is present so that the user knows immediatel
  
  Once the start button is clicked the questions are displayed with a choice of 3 possible answers.
 
-<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view on all devices">
+<img src="assets/images/responsiveness/scones.webp" alt="Quiz view on all devices">
 
 <br>
 
@@ -37,7 +37,7 @@ A simple but effective start button is present so that the user knows immediatel
 
 While the game is being played the user can choose an answer by clicking the relevant button. If the answer is correct the button will turn green and the score will increment by 1.
 
-<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view showing selected correct answer and the score counter">
+<img src="assets/images/responsiveness/pirate.webp" alt="Quiz view showing selected correct answer and the score counter">
 
 <br>
 
@@ -45,7 +45,7 @@ While the game is being played the user can choose an answer by clicking the rel
 
 If the answer selected by the user is wrong the button will turn red and the score will not change.
 
-<img src="assets/images/responsiveness/main-all-screens.webp" alt="Quiz view showing selected correct answer and the score counter">
+<img src="assets/images/responsiveness/surfer.webp" alt="Quiz view showing selected correct answer and the score counter">
 
 <br>
 
@@ -53,7 +53,7 @@ If the answer selected by the user is wrong the button will turn red and the sco
 
 At the end of the quiz the score is displayed along with a message that depends on that score. A reset button will also appear fothe user to play again.
 
-<img src="assets/images/responsiveness/main-all-screens.webp" alt="End of quiz display">
+<img src="assets/images/responsiveness/pasty.webp" alt="End of quiz display">
 
 <br>
 
