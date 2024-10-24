@@ -157,11 +157,11 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreCounter.classList.toggle("hide");
         resetButton.classList.toggle("hide");
 
-        if (userScore < 2) {
+        if (userScore < 3) {
             let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             better luck next time!`
             announce(message);
-        } else if (userScore < 5) {
+        } else if (userScore < 7) {
             let message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
             could you do better?`
             announce(message);
