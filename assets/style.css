@@ -107,7 +107,7 @@ p {
 }
 
 .selected {
-    border: 2px solid blue;
+    border: 5px solid #f9bc3f;
 }
 
 /* by class */
@@ -132,6 +132,8 @@ p {
 
 @media (max-width: 768px) {
     #answers-container {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         /* Make buttons full width */
         margin: 5px 0;

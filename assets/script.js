@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetButton = document.getElementById("reset");
 
     const questionsContainer = document.getElementById("questions-container");
+    const answerContainer = document.getElementById("answers-container");
     // const topic = questionsArray[0].questions;
     let topic = "Cornwall";
     //change shuffledQuestions to a function later
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //checks whether answer selected is correct
         if (selectedButton.getAttribute("data-answer")) {
-            questionsContainer.style.backgroundColor = "green";
+            answerButtons.style.backgroundColor = "green";
             // swal({
             //     title: "Good job!",
             //     text: "You got the right answer!",
@@ -89,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // });
             userScore++;
         } else {
-            questionsContainer.style.backgroundColor = "red";
+            answerContainer.style.backgroundColor = "red";
             // swal({
             //     title: "Good try! but...",
             //     text: "You got the wrong answer!",
