@@ -99,9 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
             button.disabled = true;
         }
 
-        if (currentQuestionIndex + 1 < 10) {
+        if (currentQuestionIndex < 10) {
             nextButton.classList.toggle("hide"); //reveals next button
-        } else {
+        }
+        else {
             finishedQuizScene();
         }
 
@@ -116,7 +117,12 @@ document.addEventListener("DOMContentLoaded", () => {
         questionsContainer.style.backgroundColor = "";
 
         currentQuestionIndex++;
-        removeLastQuestion();
+
+        if (currentQuestionIndex != 10) {
+            removeLastQuestion();
+        } else {
+            announceScore();
+        }
         }
     
     // //marker 6
@@ -145,6 +151,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 return questionSet.questions.sort(() => Math.random() - 0.5);
             }
         }
+    }
+
+    function announceScore() {
+        questionsContainer.classList.toggle("hide");
+        scoreCounter.classList.toggle("hide");
+        resetButton.classList.toggle("hide");
+        
+        if (userScore < 2) {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            better luck next time!`
+        } else if (userScore < 5) {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            could you do better?`
+        } else {
+            message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10...
+            Great job!`
+        }
+        
+        message = `Meur ras for taking our quiz on Cornwall! You got ${userScore} questions correct out of 10`
+
+        document.getElementById("question").innerText = message;
     }
 
 
